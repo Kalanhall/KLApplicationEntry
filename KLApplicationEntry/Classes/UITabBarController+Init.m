@@ -54,10 +54,6 @@ const NSString *SWIPE_CALLBACK_KEY = @"SWIPE_CALLBACK_KEY";
     }
 }
 
-- (void)swipeCallBack:(void (^)(UISwipeGestureRecognizer * _Nonnull))callBack {
-    
-}
-
 - (instancetype)setItemPositionAdjustment:(UIOffset)offset
 {
     // MARK: 适配iOS13以下选项卡
@@ -78,7 +74,13 @@ const NSString *SWIPE_CALLBACK_KEY = @"SWIPE_CALLBACK_KEY";
 
 - (instancetype)setTabBarBackgroundColor:(UIColor *)color
 {
-    self.tabBar.backgroundImage = [self tab_fetchImageWithColor:color];
+    if (@available(iOS 13.0, *)) {
+        UITabBarAppearance *appearance = self.tabBar.standardAppearance.copy;
+        appearance.backgroundImage = [self tab_fetchImageWithColor:color];
+        self.tabBar.standardAppearance = appearance;
+    } else {
+        self.tabBar.backgroundImage = [self tab_fetchImageWithColor:color];
+    }
     return self;
 }
 
@@ -97,7 +99,7 @@ const NSString *SWIPE_CALLBACK_KEY = @"SWIPE_CALLBACK_KEY";
 }
 
 - (UIImage *)tab_fetchImageWithColor:(UIColor *)color {
-    CGRect rect = CGRectMake(0.0f, 0.0f, 0.5, 0.5);
+    CGRect rect = CGRectMake(0.0f, 0.0f, 1, 1);
     UIGraphicsBeginImageContext(rect.size);
     CGContextRef context = UIGraphicsGetCurrentContext();
     CGContextSetFillColorWithColor(context, [color CGColor]);
