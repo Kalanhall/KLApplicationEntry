@@ -1,5 +1,5 @@
 PODS:
-  - KLApplicationEntry (1.0.0):
+  - KLApplicationEntry (1.0.1):
     - KLNavigationController (~> 1.0.0)
   - KLNavigationController (1.0.0)
 
@@ -15,7 +15,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  KLApplicationEntry: 1cbcff2fc28813d848bbf9cc467b9fa071e3eaaf
+  KLApplicationEntry: 02913500dd233f45b2d32af34b59c97ba723c8fe
   KLNavigationController: ed8a50a14e54a499d3a483c681bb7f394002a6bf
 
 PODFILE CHECKSUM: eb7f1210d0de8e3bb9e0de54010e24cba7658f1b

@@ -32,6 +32,9 @@ NS_ASSUME_NONNULL_BEGIN
 /// @Returns self
 - (instancetype)setTabBarBackgroundColor:(nullable UIColor *)color;
 
+///  回调给外部的事件，用于调试工具的调用
+@property (copy, nonatomic) void (^swipeTabBarCallBack)(UISwipeGestureRecognizer *swipe);
+
 @end
 
 NS_ASSUME_NONNULL_END

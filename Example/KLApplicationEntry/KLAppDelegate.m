@@ -30,6 +30,14 @@
     self.window.rootViewController = [UITabBarController tabBarWithControllers:controllers];
     [self.window makeKeyAndVisible];
     
+    [(UITabBarController *)self.window.rootViewController setSwipeTabBarCallBack:^(UISwipeGestureRecognizer * _Nonnull swipe) {
+        if (swipe.direction == UISwipeGestureRecognizerDirectionRight) {
+            //
+        } else {
+            //
+        }
+    }];
+    
     return YES;
 }
 

@@ -7,6 +7,9 @@
 //
 
 #import "UITabBarController+Init.h"
+#import <objc/runtime.h>
+
+const NSString *SWIPE_CALLBACK_KEY = @"SWIPE_CALLBACK_KEY";
 
 @implementation UITabBarController (Init)
 
@@ -34,7 +37,25 @@
         appearance.stackedLayoutAppearance.selected.titlePositionAdjustment = UIOffsetMake(0, -3);
         tc.tabBar.standardAppearance = appearance;
     }
+    
+    UISwipeGestureRecognizer *swipr = [UISwipeGestureRecognizer.alloc initWithTarget:tc action:@selector(swipGesture:)];
+    swipr.direction = UISwipeGestureRecognizerDirectionRight;
+    [tc.tabBar addGestureRecognizer:swipr];
+    UISwipeGestureRecognizer *swipl = [UISwipeGestureRecognizer.alloc initWithTarget:tc action:@selector(swipGesture:)];
+    swipl.direction = UISwipeGestureRecognizerDirectionLeft;
+    [tc.tabBar addGestureRecognizer:swipl];
+    
     return tc;
+}
+
+- (void)swipGesture:(UISwipeGestureRecognizer *)swip {
+    if (self.swipeTabBarCallBack) {
+        self.swipeTabBarCallBack(swip);
+    }
+}
+
+- (void)swipeCallBack:(void (^)(UISwipeGestureRecognizer * _Nonnull))callBack {
+    
 }
 
 - (instancetype)setItemPositionAdjustment:(UIOffset)offset
@@ -65,6 +86,14 @@
 {
     self.tabBar.shadowImage = [self tab_fetchImageWithColor:color];
     return self;
+}
+
+- (void)setSwipeTabBarCallBack:(void (^)(UISwipeGestureRecognizer * _Nonnull))swipeTabBarCallBack {
+    objc_setAssociatedObject(self, &SWIPE_CALLBACK_KEY, swipeTabBarCallBack, OBJC_ASSOCIATION_COPY_NONATOMIC);
+}
+
+- (void (^)(UISwipeGestureRecognizer * _Nonnull))swipeTabBarCallBack {
+    return objc_getAssociatedObject(self, &SWIPE_CALLBACK_KEY);
 }
 
 - (UIImage *)tab_fetchImageWithColor:(UIColor *)color {
