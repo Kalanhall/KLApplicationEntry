@@ -21,11 +21,11 @@ Pod::Spec.new do |s|
   组件化 - 应用入口，TabBar + Navigation 控制器的设置；
                        DESC
 
-  s.homepage         = 'https://github.com/Kalanhall@163.com/KLApplicationEntry'
+  s.homepage         = 'https://github.com/Kalanhall'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Kalanhall@163.com' => 'wujm002@galanz.com' }
-  s.source           = { :git => 'https://github.com/Kalanhall@163.com/KLApplicationEntry.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/Kalanhall/KLApplicationEntry.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.0'
