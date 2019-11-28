@@ -61,12 +61,12 @@
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		82231BBD0D31C67B657C89F8 /* Pods_KLApplicationEntry_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KLApplicationEntry_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		8AC9D0083C4EA2AE8828E474 /* KLApplicationEntry.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = KLApplicationEntry.podspec; path = ../KLApplicationEntry.podspec; sourceTree = "<group>"; };
-		92B34FE5E92E04429920D2B4 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		8AC9D0083C4EA2AE8828E474 /* KLApplicationEntry.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = KLApplicationEntry.podspec; path = ../KLApplicationEntry.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		92B34FE5E92E04429920D2B4 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		93D1611BCF581ADFB13E7A6E /* Pods-KLApplicationEntry_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KLApplicationEntry_Example.debug.xcconfig"; path = "Target Support Files/Pods-KLApplicationEntry_Example/Pods-KLApplicationEntry_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		97F070865CF76AA6AB76922F /* Pods_KLApplicationEntry_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KLApplicationEntry_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3F7B6D590C08FBAE6AA5312 /* Pods-KLApplicationEntry_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KLApplicationEntry_Tests.release.xcconfig"; path = "Target Support Files/Pods-KLApplicationEntry_Tests/Pods-KLApplicationEntry_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		F128135AE1431327B257C985 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		F128135AE1431327B257C985 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,7 +193,6 @@
 				1A185F536870E4CCE7B05C1E /* Pods-KLApplicationEntry_Tests.debug.xcconfig */,
 				E3F7B6D590C08FBAE6AA5312 /* Pods-KLApplicationEntry_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -258,6 +257,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -347,10 +347,12 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-KLApplicationEntry_Example/Pods-KLApplicationEntry_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/KLApplicationEntry/KLApplicationEntry.framework",
+				"${BUILT_PRODUCTS_DIR}/KLNavigationController/KLNavigationController.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KLApplicationEntry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KLNavigationController.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -449,7 +451,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -482,7 +484,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;

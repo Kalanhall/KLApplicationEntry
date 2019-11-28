@@ -1,0 +1,27 @@
+{
+  "name": "KLApplicationEntry",
+  "version": "1.0.0",
+  "summary": "应用入口设置",
+  "description": "组件化 - 应用入口，TabBar + Navigation 控制器的设置；",
+  "homepage": "https://github.com/Kalanhall@163.com/KLApplicationEntry",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Kalanhall@163.com": "wujm002@galanz.com"
+  },
+  "source": {
+    "git": "https://github.com/Kalanhall@163.com/KLApplicationEntry.git",
+    "tag": "1.0.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "KLApplicationEntry/Classes/**/*",
+  "dependencies": {
+    "KLNavigationController": [
+      "~> 1.0.0"
+    ]
+  }
+}

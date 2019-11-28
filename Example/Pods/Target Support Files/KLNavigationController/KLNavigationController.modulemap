@@ -1,0 +1,6 @@
+framework module KLNavigationController {
+  umbrella header "KLNavigationController-umbrella.h"
+
+  export *
+  module * { export * }
+}

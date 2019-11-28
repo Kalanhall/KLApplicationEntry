@@ -1,0 +1,23 @@
+PODS:
+  - KLApplicationEntry (1.0.0):
+    - KLNavigationController (~> 1.0.0)
+  - KLNavigationController (1.0.0)
+
+DEPENDENCIES:
+  - KLApplicationEntry (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - KLNavigationController
+
+EXTERNAL SOURCES:
+  KLApplicationEntry:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  KLApplicationEntry: 1cbcff2fc28813d848bbf9cc467b9fa071e3eaaf
+  KLNavigationController: ed8a50a14e54a499d3a483c681bb7f394002a6bf
+
+PODFILE CHECKSUM: eb7f1210d0de8e3bb9e0de54010e24cba7658f1b
+
+COCOAPODS: 1.8.3

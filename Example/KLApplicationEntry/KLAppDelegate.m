@@ -7,12 +7,29 @@
 //
 
 #import "KLAppDelegate.h"
+#import "KLViewController.h"
+@import KLApplicationEntry;
 
 @implementation KLAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
+    self.window = [UIWindow.alloc initWithFrame:UIScreen.mainScreen.bounds];
+    [KLNavigationController navigationGlobalTincolor:UIColor.blackColor];
+    [KLNavigationController navigationGlobalBarTincolor:UIColor.blackColor];
+    [KLNavigationController navigationGlobalBackIndicatorImage:[UIImage imageNamed:@"back"]];
+    [KLNavigationController navigationGlobalBarButtonItemTitleTextColor:UIColor.clearColor font:nil];
+    
+    NSArray *controllers =
+    @[[KLNavigationController navigationWithRootViewController:KLViewController.new title:@"商城" image:@"Tab0" selectedImage:@"Tab0-h"],
+      [KLNavigationController navigationWithRootViewController:KLViewController.new title:@"发现" image:@"Tab1" selectedImage:@"Tab1-h"],
+      [KLNavigationController navigationWithRootViewController:KLViewController.new title:@"购物" image:@"Tab2" selectedImage:@"Tab2-h"],
+      [KLNavigationController navigationWithRootViewController:KLViewController.new title:@"我的" image:@"Tab3" selectedImage:@"Tab3-h"]];
+    self.window.rootViewController = [UITabBarController tabBarWithControllers:controllers];
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 
