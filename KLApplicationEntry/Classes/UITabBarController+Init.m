@@ -86,7 +86,13 @@ const NSString *SWIPE_CALLBACK_KEY = @"SWIPE_CALLBACK_KEY";
 
 - (instancetype)setTabBarShadowColor:(UIColor *)color
 {
-    self.tabBar.shadowImage = [self tab_fetchImageWithColor:color];
+    if (@available(iOS 13.0, *)) {
+        UITabBarAppearance *appearance = self.tabBar.standardAppearance.copy;
+        appearance.shadowImage = [self tab_fetchImageWithColor:color];
+        self.tabBar.standardAppearance = appearance;
+    } else {
+        self.tabBar.shadowImage = [self tab_fetchImageWithColor:color];
+    }
     return self;
 }
 
