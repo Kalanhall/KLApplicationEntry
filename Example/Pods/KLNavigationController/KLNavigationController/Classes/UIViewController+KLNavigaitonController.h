@@ -19,6 +19,7 @@
 @property (nonatomic, assign) IBInspectable float kl_barAlpha;
 @property (nonatomic, assign) IBInspectable BOOL kl_barHidden;
 @property (nonatomic, assign) IBInspectable BOOL kl_barShadowHidden;
+@property (nonatomic, assign) IBInspectable UIColor * kl_barShadowColor;
 @property (nonatomic, assign) IBInspectable BOOL kl_backInteractive;
 @property (nonatomic, assign) IBInspectable BOOL kl_swipeBackEnabled;
 @property (nonatomic, assign) IBInspectable BOOL kl_clickBackEnabled;

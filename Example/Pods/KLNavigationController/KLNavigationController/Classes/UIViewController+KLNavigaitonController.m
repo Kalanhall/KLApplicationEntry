@@ -102,6 +102,19 @@
     objc_setAssociatedObject(self, @selector(kl_barShadowHidden), @(hidden), OBJC_ASSOCIATION_COPY_NONATOMIC);
 }
 
+- (UIColor *)kl_barShadowColor {
+    id obj = objc_getAssociatedObject(self, _cmd);
+    return  obj;
+}
+
+- (void)setKl_barShadowColor:(UIColor *)kl_barShadowColor {
+    self.kl_barShadowHidden = YES;
+    self.navigationController.navigationBar.layer.shadowColor = kl_barShadowColor.CGColor;
+    self.navigationController.navigationBar.layer.shadowOffset = CGSizeMake(0, 2);
+    self.navigationController.navigationBar.layer.shadowOpacity = 0.2;
+    objc_setAssociatedObject(self, @selector(kl_barShadowColor), kl_barShadowColor, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
+
 - (BOOL)kl_backInteractive {
     id obj = objc_getAssociatedObject(self, _cmd);
     return obj ? [obj boolValue] : YES;
