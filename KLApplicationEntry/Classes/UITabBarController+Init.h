@@ -22,15 +22,21 @@ NS_ASSUME_NONNULL_BEGIN
 /// @Returns self
 - (instancetype)setItemPositionAdjustment:(UIOffset)offset;
 
-/// 设置选项卡阴影线颜色，默认0.5pt
-/// @param color 颜色
-/// @Returns self
-- (instancetype)setTabBarShadowColor:(nullable UIColor *)color;
-
 /// 设置选项卡背景颜色
 /// @param color 颜色
 /// @Returns self
 - (instancetype)setTabBarBackgroundColor:(nullable UIColor *)color;
+
+/// 设置选项卡阴影线颜色，默认0.5pt
+/// @param color 颜色
+/// @Returns self
+- (instancetype)setTabBarShadowLineColor:(nullable UIColor *)color;
+
+/// 设置TabBar阴影
+/// @param color 阴影颜色
+/// @param opacity 阴影透明度
+/// @Returns self
+- (instancetype)setTabBarShadowColor:(nullable UIColor *)color opacity:(CGFloat)opacity;
 
 ///  回调给外部的事件，用于调试工具的调用
 @property (copy, nonatomic) void (^swipeTabBarCallBack)(UISwipeGestureRecognizer *swipe);

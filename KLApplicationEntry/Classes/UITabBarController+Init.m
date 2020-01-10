@@ -84,7 +84,7 @@ const NSString *SWIPE_CALLBACK_KEY = @"SWIPE_CALLBACK_KEY";
     return self;
 }
 
-- (instancetype)setTabBarShadowColor:(UIColor *)color
+- (instancetype)setTabBarShadowLineColor:(UIColor *)color
 {
     if (@available(iOS 13.0, *)) {
         UITabBarAppearance *appearance = self.tabBar.standardAppearance.copy;
@@ -93,6 +93,22 @@ const NSString *SWIPE_CALLBACK_KEY = @"SWIPE_CALLBACK_KEY";
     } else {
         self.tabBar.shadowImage = [self tab_fetchImageWithColor:color];
     }
+    return self;
+}
+
+- (instancetype)setTabBarShadowColor:(nullable UIColor *)color opacity:(CGFloat)opacity
+{
+    if (@available(iOS 13.0, *)) {
+        UITabBarAppearance *appearance = self.tabBar.standardAppearance.copy;
+        appearance.shadowImage = [self tab_fetchImageWithColor:UIColor.clearColor];
+        self.tabBar.standardAppearance = appearance;
+    } else {
+        self.tabBar.shadowImage = [self tab_fetchImageWithColor:UIColor.clearColor];
+    }
+    
+    self.tabBar.layer.shadowColor = color.CGColor;
+    self.tabBar.layer.shadowOffset = CGSizeMake(0, -2);
+    self.tabBar.layer.shadowOpacity = opacity;
     return self;
 }
 
