@@ -1,13 +1,13 @@
 PODS:
-  - KLApplicationEntry (1.0.3):
+  - KLApplicationEntry (1.0.6):
     - KLNavigationController (~> 1.0.0)
-  - KLNavigationController (1.0.0)
+  - KLNavigationController (1.0.1)
 
 DEPENDENCIES:
   - KLApplicationEntry (from `../`)
 
 SPEC REPOS:
-  trunk:
+  https://github.com/Kalanhall/Specs.git:
     - KLNavigationController
 
 EXTERNAL SOURCES:
@@ -15,8 +15,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  KLApplicationEntry: 398c4a3efa65e24de5b17835f20d1d78818ecc76
-  KLNavigationController: ed8a50a14e54a499d3a483c681bb7f394002a6bf
+  KLApplicationEntry: a23086139607b32ee55d4d8df9618877d32ed5d6
+  KLNavigationController: 776ee732d64888d4322e6f23011d59730525f753
 
 PODFILE CHECKSUM: eb7f1210d0de8e3bb9e0de54010e24cba7658f1b
 
