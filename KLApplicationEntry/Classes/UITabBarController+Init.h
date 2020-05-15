@@ -17,10 +17,15 @@ NS_ASSUME_NONNULL_BEGIN
 /// @Returns UITabBarController实例
 + (instancetype)tabBarWithControllers:(NSArray <UIViewController *> *)controllers;
 
-/// 设置选项卡文字及图片垂直方向位移
+/// 设置选项卡文字垂直方向位移
 /// @param offset 导航栏根控制器
 /// @Returns self
-- (instancetype)setItemPositionAdjustment:(UIOffset)offset;
+- (instancetype)setTitleItemPositionAdjustment:(UIOffset)offset;
+
+/// 设置选项卡图片垂直方向位移
+/// @param offset 导航栏根控制器
+/// @Returns self
+- (instancetype)setImageItemPositionAdjustment:(UIOffset)offset;
 
 /// 设置选项卡背景颜色
 /// @param color 颜色

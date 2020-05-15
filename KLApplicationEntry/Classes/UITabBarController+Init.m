@@ -19,23 +19,23 @@ const NSString *SWIPE_CALLBACK_KEY = @"SWIPE_CALLBACK_KEY";
     tc.view.backgroundColor = UIColor.whiteColor;
     
     tc.viewControllers = controllers;
-    
-    // MARK: 适配iOS13以下选项卡
-    for (UIViewController *vc in tc.viewControllers) {
-        [vc.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName : UIColor.lightGrayColor} forState:UIControlStateNormal];
-        [vc.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName : UIColor.blackColor} forState:UIControlStateSelected];
-        vc.tabBarItem.titlePositionAdjustment = UIOffsetMake(0, -3);
-        vc.tabBarItem.imageInsets = UIEdgeInsetsMake(-3, 0, 3, 0);
-    }
 
-    // MARK: 适配iOS13选项卡
     if (@available(iOS 13.0, *)) {
+        // MARK: 适配iOS13选项卡
         UITabBarAppearance *appearance = tc.tabBar.standardAppearance.copy;
         appearance.stackedLayoutAppearance.normal.titleTextAttributes = @{NSForegroundColorAttributeName : UIColor.lightGrayColor};
         appearance.stackedLayoutAppearance.selected.titleTextAttributes = @{NSForegroundColorAttributeName : UIColor.blackColor};
         appearance.stackedLayoutAppearance.normal.titlePositionAdjustment = UIOffsetMake(0, -3);
         appearance.stackedLayoutAppearance.selected.titlePositionAdjustment = UIOffsetMake(0, -3);
         tc.tabBar.standardAppearance = appearance;
+    } else {
+        // MARK: 适配iOS13以下选项卡
+        for (UIViewController *vc in tc.viewControllers) {
+            [vc.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName : UIColor.lightGrayColor} forState:UIControlStateNormal];
+            [vc.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName : UIColor.blackColor} forState:UIControlStateSelected];
+            vc.tabBarItem.titlePositionAdjustment = UIOffsetMake(0, -3);
+            vc.tabBarItem.imageInsets = UIEdgeInsetsMake(-3, 0, 3, 0);
+        }
     }
     
     UISwipeGestureRecognizer *swipr = [UISwipeGestureRecognizer.alloc initWithTarget:tc action:@selector(swipGesture:)];
@@ -54,20 +54,34 @@ const NSString *SWIPE_CALLBACK_KEY = @"SWIPE_CALLBACK_KEY";
     }
 }
 
-- (instancetype)setItemPositionAdjustment:(UIOffset)offset
+- (instancetype)setTitleItemPositionAdjustment:(UIOffset)offset
 {
-    // MARK: 适配iOS13以下选项卡
-    for (UIViewController *vc in self.viewControllers) {
-        vc.tabBarItem.titlePositionAdjustment = offset;
-        vc.tabBarItem.imageInsets = UIEdgeInsetsMake(offset.vertical, offset.horizontal, -offset.vertical, -offset.horizontal);
-    }
-    
-    // MARK: 适配iOS13选项卡
     if (@available(iOS 13.0, *)) {
+        // MARK: 适配iOS13选项卡
         UITabBarAppearance *appearance = self.tabBar.standardAppearance.copy;
         appearance.stackedLayoutAppearance.normal.titlePositionAdjustment = offset;
+        self.tabBar.standardAppearance = appearance;
+    } else {
+        // MARK: 适配iOS13以下选项卡
+        for (UIViewController *vc in self.viewControllers) {
+            vc.tabBarItem.titlePositionAdjustment = offset;
+        }
+    }
+    return self;
+}
+
+- (instancetype)setImageItemPositionAdjustment:(UIOffset)offset;
+{    
+    if (@available(iOS 13.0, *)) {
+        // MARK: 适配iOS13选项卡
+        UITabBarAppearance *appearance = self.tabBar.standardAppearance.copy;
         appearance.stackedLayoutAppearance.selected.titlePositionAdjustment = offset;
         self.tabBar.standardAppearance = appearance;
+    } else {
+        // MARK: 适配iOS13以下选项卡
+        for (UIViewController *vc in self.viewControllers) {
+            vc.tabBarItem.imageInsets = UIEdgeInsetsMake(offset.vertical, offset.horizontal, -offset.vertical, -offset.horizontal);
+        }
     }
     return self;
 }
