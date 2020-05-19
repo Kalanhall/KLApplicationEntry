@@ -41,7 +41,6 @@ const NSString *SELECT_CALLBACK_KEY = @"SELECT_CALLBACK_KEY";
     }
     control.bounds = CGRectMake(0, 0, w, h);
     control.center = CGPointMake((index + 0.5) * w, y);
-    control.layer.borderWidth = 1;
     control.tag = index;
     [self.tabBar addSubview:control];
     [control addTarget:self action:@selector(tabBarItemControlCallBack:) forControlEvents:UIControlEventTouchUpInside];
