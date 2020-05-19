@@ -51,6 +51,15 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param opacity 阴影透明度
 - (void)setTabBarShadowColor:(nullable UIColor *)color opacity:(CGFloat)opacity;
 
+/// 设置自定义响应事件区域
+/// @param index TabBarItem Index
+/// @param height 宽度是适配Item的，可以自定义高度，height = 0 则默认与宽相等
+- (void)setTabBarRespondAreaAtIndex:(NSInteger)index height:(CGFloat)height;
+
+/// 设置选项卡指定子控制器点击回调
+/// 设置自定义点击区域后，会回调该方法
+@property (copy, nonatomic) void (^shouldSelectViewController)(NSInteger index);
+
 ///  回调给外部的事件，用于调试工具的调用
 @property (copy, nonatomic) void (^swipeTabBarCallBack)(UISwipeGestureRecognizer *swipe);
 

@@ -18,9 +18,6 @@
     // Override point for customization after application launch.
     
     self.window = [UIWindow.alloc initWithFrame:UIScreen.mainScreen.bounds];
-    [KLNavigationController setAppearanceTincolor:UIColor.blackColor];
-    [KLNavigationController setAppearanceBarTincolor:UIColor.whiteColor];
-    [KLNavigationController setAppearanceBackIndicatorImage:[UIImage imageNamed:@"back"]];
     
     NSArray *controllers =
     @[
@@ -36,35 +33,44 @@
                                                        title:@"我的" image:@"tab4-n" selectedImage:@"tab4-s"]
     ];
     KLTabBarController *vc = [KLTabBarController tabBarWithControllers:controllers];
+    
+    // MARK: - 导航栏全局设置
+    [KLNavigationController setAppearanceTincolor:UIColor.blackColor];
+    [KLNavigationController setAppearanceBarTincolor:UIColor.whiteColor];
+    [KLNavigationController setAppearanceBackIndicatorImage:[UIImage imageNamed:@"back"]];
+    
+    // MARK: - 选项卡全局设置
+    // 设置阴影线颜色，当只有设置了背景图后才生效
     [vc setTabBarShadowLineColor:UIColor.clearColor];
+    // 设置背景图片
     [vc setTabBarBackgroundImageWithColor:UIColor.whiteColor];
+    // 设置文字样式
     [vc setTabBarItemTitleTextAttributes:@{NSForegroundColorAttributeName : UIColor.blackColor,
                                            NSFontAttributeName : [UIFont systemFontOfSize:10]}
                                 forState:UIControlStateNormal];
     [vc setTabBarItemTitleTextAttributes:@{NSForegroundColorAttributeName : UIColor.blackColor,
                                            NSFontAttributeName : [UIFont systemFontOfSize:10]}
                                 forState:UIControlStateHighlighted];
+    // 设置文字位置偏移量
     [vc setTabBarItemTitlePositionAdjustment:(UIOffset){0, -2} forState:UIControlStateNormal];
     [vc setTabBarItemTitlePositionAdjustment:(UIOffset){0, -2} forState:UIControlStateSelected];
+    // 设置凸起图片高度
     [vc setTabBarItemImageEdgeInsets:(UIEdgeInsets){-17,0,17,0} atIndex:2];
-    self.window.rootViewController = vc;
-    [self.window makeKeyAndVisible];
+    // 增加一个凸起点击区域
+    [vc setTabBarRespondAreaAtIndex:2 height:0];
+    
     
     __weak typeof(self) weakself = self;
-    vc.selectedCenterItemCallBack = ^{
-        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"消息" message:@"点击中间按钮" preferredStyle:UIAlertControllerStyleAlert];
-        UIAlertAction *sure = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDestructive handler:nil];
-        [alert addAction:sure];
-        [weakself.window.rootViewController presentViewController:alert animated:YES completion:nil];
-    };
-    
     vc.swipeTabBarCallBack = ^(UISwipeGestureRecognizer * _Nonnull swipe) {
         if (swipe.direction == UISwipeGestureRecognizerDirectionRight) {
-            //
+            // 右侧划
         } else {
-            //
+            // 左侧划
         }
     };
+    
+    self.window.rootViewController = vc;
+    [self.window makeKeyAndVisible];
     
     return YES;
 }

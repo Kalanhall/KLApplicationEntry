@@ -11,6 +11,7 @@
 #endif
 
 #import "KLNavigationController+Init.h"
+#import "UITabBar+Init.h"
 #import "UITabBarController+Init.h"
 
 FOUNDATION_EXPORT double KLApplicationEntryVersionNumber;

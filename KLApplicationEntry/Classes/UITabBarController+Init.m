@@ -10,6 +10,7 @@
 #import <objc/runtime.h>
 
 const NSString *SWIPE_CALLBACK_KEY = @"SWIPE_CALLBACK_KEY";
+const NSString *SELECT_CALLBACK_KEY = @"SELECT_CALLBACK_KEY";
 
 @implementation UITabBarController (Init)
 
@@ -26,6 +27,30 @@ const NSString *SWIPE_CALLBACK_KEY = @"SWIPE_CALLBACK_KEY";
     [tc.tabBar addGestureRecognizer:swipl];
     
     return tc;
+}
+
+- (void)setTabBarRespondAreaAtIndex:(NSInteger)index height:(CGFloat)height {
+    UIButton *control = [UIButton buttonWithType:UIButtonTypeCustom];
+    CGFloat w = self.tabBar.bounds.size.width/self.tabBar.items.count;
+    CGFloat h = height > 0 ? height : w;
+    CGFloat y = 0;
+    if (@available(iOS 11.0, *)) {
+        y = fabs(h * 0.5 - (self.tabBar.bounds.size.height - UIApplication.sharedApplication.keyWindow.safeAreaInsets.bottom));
+    } else {
+        y = fabs(h * 0.5 - self.tabBar.bounds.size.height);
+    }
+    control.bounds = CGRectMake(0, 0, w, h);
+    control.center = CGPointMake((index + 0.5) * w, y);
+    control.layer.borderWidth = 1;
+    control.tag = index;
+    [self.tabBar addSubview:control];
+    [control addTarget:self action:@selector(tabBarItemControlCallBack:) forControlEvents:UIControlEventTouchUpInside];
+}
+
+- (void)tabBarItemControlCallBack:(UIButton *)sender {
+    if (self.shouldSelectViewController) {
+        self.shouldSelectViewController(sender.tag);
+    }
 }
 
 - (void)swipGesture:(UISwipeGestureRecognizer *)swip {
@@ -125,6 +150,14 @@ const NSString *SWIPE_CALLBACK_KEY = @"SWIPE_CALLBACK_KEY";
 
 - (void (^)(UISwipeGestureRecognizer * _Nonnull))swipeTabBarCallBack {
     return objc_getAssociatedObject(self, &SWIPE_CALLBACK_KEY);
+}
+
+- (void)setShouldSelectViewController:(void (^)(NSInteger))shouldSelectViewController {
+    objc_setAssociatedObject(self, &SELECT_CALLBACK_KEY, shouldSelectViewController, OBJC_ASSOCIATION_COPY_NONATOMIC);
+}
+
+- (void (^)(NSInteger))shouldSelectViewController {
+    return objc_getAssociatedObject(self, &SELECT_CALLBACK_KEY);
 }
 
 - (UIImage *)tab_fetchImageWithColor:(UIColor *)color {
