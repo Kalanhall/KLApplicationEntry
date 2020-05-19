@@ -8,6 +8,7 @@
 
 #import "KLAppDelegate.h"
 #import "KLViewController.h"
+#import "KLTabBarController.h"
 @import KLApplicationEntry;
 
 @implementation KLAppDelegate
@@ -17,26 +18,53 @@
     // Override point for customization after application launch.
     
     self.window = [UIWindow.alloc initWithFrame:UIScreen.mainScreen.bounds];
-    [KLNavigationController navigationGlobalTincolor:UIColor.blackColor];
-    [KLNavigationController navigationGlobalBarTincolor:UIColor.blackColor];
-    [KLNavigationController navigationGlobalBackIndicatorImage:[UIImage imageNamed:@"back"]];
-    [KLNavigationController navigationGlobalBarButtonItemTitleTextColor:UIColor.clearColor font:nil];
+    [KLNavigationController setAppearanceTincolor:UIColor.blackColor];
+    [KLNavigationController setAppearanceBarTincolor:UIColor.whiteColor];
+    [KLNavigationController setAppearanceBackIndicatorImage:[UIImage imageNamed:@"back"]];
     
     NSArray *controllers =
-    @[[KLNavigationController navigationWithRootViewController:KLViewController.new title:@"商城" image:@"Tab0" selectedImage:@"Tab0-h"],
-      [KLNavigationController navigationWithRootViewController:KLViewController.new title:@"发现" image:@"Tab1" selectedImage:@"Tab1-h"],
-      [KLNavigationController navigationWithRootViewController:KLViewController.new title:@"购物" image:@"Tab2" selectedImage:@"Tab2-h"],
-      [KLNavigationController navigationWithRootViewController:KLViewController.new title:@"我的" image:@"Tab3" selectedImage:@"Tab3-h"]];
-    self.window.rootViewController = [UITabBarController tabBarWithControllers:controllers];
+    @[
+    [KLNavigationController navigationWithRootViewController:KLViewController.new
+                                                       title:@"闲鱼" image:@"tab0-n" selectedImage:@"tab0-s"],
+    [KLNavigationController navigationWithRootViewController:KLViewController.new
+                                                       title:@"鱼塘" image:@"tab1-n" selectedImage:@"tab1-s"],
+    [KLNavigationController navigationWithRootViewController:KLViewController.new
+                                                       title:@"发布" image:@"tab2-n" selectedImage:@"tab2-n"],
+    [KLNavigationController navigationWithRootViewController:KLViewController.new
+                                                       title:@"消息" image:@"tab3-n" selectedImage:@"tab3-s"],
+    [KLNavigationController navigationWithRootViewController:KLViewController.new
+                                                       title:@"我的" image:@"tab4-n" selectedImage:@"tab4-s"]
+    ];
+    KLTabBarController *vc = [KLTabBarController tabBarWithControllers:controllers];
+    [vc setTabBarShadowLineColor:UIColor.clearColor];
+    [vc setTabBarBackgroundImageWithColor:UIColor.whiteColor];
+    [vc setTabBarItemTitleTextAttributes:@{NSForegroundColorAttributeName : UIColor.blackColor,
+                                           NSFontAttributeName : [UIFont systemFontOfSize:10]}
+                                forState:UIControlStateNormal];
+    [vc setTabBarItemTitleTextAttributes:@{NSForegroundColorAttributeName : UIColor.blackColor,
+                                           NSFontAttributeName : [UIFont systemFontOfSize:10]}
+                                forState:UIControlStateHighlighted];
+    [vc setTabBarItemTitlePositionAdjustment:(UIOffset){0, -2} forState:UIControlStateNormal];
+    [vc setTabBarItemTitlePositionAdjustment:(UIOffset){0, -2} forState:UIControlStateSelected];
+    [vc setTabBarItemImageEdgeInsets:(UIEdgeInsets){-17,0,17,0} atIndex:2];
+    self.window.rootViewController = vc;
     [self.window makeKeyAndVisible];
     
-    [(UITabBarController *)self.window.rootViewController setSwipeTabBarCallBack:^(UISwipeGestureRecognizer * _Nonnull swipe) {
+    __weak typeof(self) weakself = self;
+    vc.selectedCenterItemCallBack = ^{
+        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"消息" message:@"点击中间按钮" preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction *sure = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDestructive handler:nil];
+        [alert addAction:sure];
+        [weakself.window.rootViewController presentViewController:alert animated:YES completion:nil];
+    };
+    
+    vc.swipeTabBarCallBack = ^(UISwipeGestureRecognizer * _Nonnull swipe) {
         if (swipe.direction == UISwipeGestureRecognizerDirectionRight) {
             //
         } else {
             //
         }
-    }];
+    };
     
     return YES;
 }

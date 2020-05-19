@@ -66,11 +66,11 @@
 
 /* Begin PBXFileReference section */
 		026DB0E9E9A154E4E0BBD0748399DF10 /* Pods-KLApplicationEntry_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KLApplicationEntry_Tests-dummy.m"; sourceTree = "<group>"; };
-		031DC7BEED172695C79249ECFF5B6E09 /* KLApplicationEntry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = KLApplicationEntry.framework; path = KLApplicationEntry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		031DC7BEED172695C79249ECFF5B6E09 /* KLApplicationEntry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KLApplicationEntry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0976E0FEC6F3063DC898189829E81826 /* Pods-KLApplicationEntry_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KLApplicationEntry_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		09EC9E38E49B62DD98898EF81BB684C7 /* Pods-KLApplicationEntry_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KLApplicationEntry_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		0ABA678231E0B4EFE4072267BA01FF18 /* KLNavigationController-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "KLNavigationController-Info.plist"; sourceTree = "<group>"; };
-		0C24830D318A6DACFE78BAAB129E9B07 /* Pods_KLApplicationEntry_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_KLApplicationEntry_Example.framework; path = "Pods-KLApplicationEntry_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C24830D318A6DACFE78BAAB129E9B07 /* Pods_KLApplicationEntry_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KLApplicationEntry_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FB78A2427E1BEA855EDF6147FDD75DA /* KLNavigationController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KLNavigationController-prefix.pch"; sourceTree = "<group>"; };
 		10D10E829948A996A96223BE9C178562 /* Pods-KLApplicationEntry_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KLApplicationEntry_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		115CD8E5595CF5199C20BCB760292FDC /* Pods-KLApplicationEntry_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-KLApplicationEntry_Example.modulemap"; sourceTree = "<group>"; };
@@ -84,26 +84,26 @@
 		6250737BD8FBC1406FF2E46A298AC2F2 /* KLNavigationController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KLNavigationController.xcconfig; sourceTree = "<group>"; };
 		647F1A59B246DABA1F75897704A08D9B /* KLNavigationController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KLNavigationController.m; path = KLNavigationController/Classes/KLNavigationController.m; sourceTree = "<group>"; };
 		705CAEFC5E9D10458775FC67E0FC6974 /* KLNavigationController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KLNavigationController-dummy.m"; sourceTree = "<group>"; };
-		71BE7C3389A3C2A3A32B78289873B071 /* KLApplicationEntry.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = KLApplicationEntry.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		71BE7C3389A3C2A3A32B78289873B071 /* KLApplicationEntry.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = KLApplicationEntry.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		8331CEFAA28738D0BCD853705DA1EE57 /* KLNavigationController+Init.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "KLNavigationController+Init.m"; path = "KLApplicationEntry/Classes/KLNavigationController+Init.m"; sourceTree = "<group>"; };
 		8B23CF32B28B0C8FAE36AD0CB0F140BE /* KLApplicationEntry.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KLApplicationEntry.xcconfig; sourceTree = "<group>"; };
-		9A96AF3E366D4B2200CB63A00CEC6B10 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		9A96AF3E366D4B2200CB63A00CEC6B10 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		9C1C8B0AE9A9A8929861D2F97EF9A1CA /* KLApplicationEntry-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KLApplicationEntry-dummy.m"; sourceTree = "<group>"; };
 		9CC57A255AA7981D900426273890F35D /* UIViewController+KLNavigaitonController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+KLNavigaitonController.h"; path = "KLNavigationController/Classes/UIViewController+KLNavigaitonController.h"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A2A4833E92E2ADD83657F039AAE35CAF /* Pods-KLApplicationEntry_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KLApplicationEntry_Example-dummy.m"; sourceTree = "<group>"; };
-		A2BF65A27201CF0B5E657BF73C52F636 /* Pods_KLApplicationEntry_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_KLApplicationEntry_Tests.framework; path = "Pods-KLApplicationEntry_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2BF65A27201CF0B5E657BF73C52F636 /* Pods_KLApplicationEntry_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KLApplicationEntry_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3409643F3F291C4BBD7A0B0B9CAB746 /* KLApplicationEntry-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KLApplicationEntry-umbrella.h"; sourceTree = "<group>"; };
 		A5E878CA9A7C665446756325CB413FCE /* KLApplicationEntry-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "KLApplicationEntry-Info.plist"; sourceTree = "<group>"; };
 		A6B19DF49DAE3CEA2274998158D0574E /* KLNavigationController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KLNavigationController-umbrella.h"; sourceTree = "<group>"; };
 		AA4F23B5C367E3F768CB87D385C8728A /* KLNavigationController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KLNavigationController.h; path = KLNavigationController/Classes/KLNavigationController.h; sourceTree = "<group>"; };
 		B0AA5A5AE7A50EA5A45BD733DFCB3E71 /* KLApplicationEntry-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KLApplicationEntry-prefix.pch"; sourceTree = "<group>"; };
 		B0FA4BB86BADDDC2B140260B101CC4FB /* Pods-KLApplicationEntry_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KLApplicationEntry_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		B22B7D100E8D1CBC3B89F61B8C61C072 /* KLNavigationController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = KLNavigationController.framework; path = KLNavigationController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B22B7D100E8D1CBC3B89F61B8C61C072 /* KLNavigationController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KLNavigationController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2AFBE927B18768A4393A09CF40BC5E3 /* KLNavigationHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KLNavigationHeader.h; path = KLNavigationController/Classes/KLNavigationHeader.h; sourceTree = "<group>"; };
 		B5E200F637E4B09FC999EE725B0F6808 /* Pods-KLApplicationEntry_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KLApplicationEntry_Tests-umbrella.h"; sourceTree = "<group>"; };
 		B83A81162F7A8BC050C84FC92A5EBCE5 /* Pods-KLApplicationEntry_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KLApplicationEntry_Example-umbrella.h"; sourceTree = "<group>"; };
-		BD42150627A8DDDC79863117DBA2B06F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		BD42150627A8DDDC79863117DBA2B06F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		C0B46895AC6960DBADC1563F60D6696A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		D38EC6A98F18488DAB704549C2885DE8 /* Pods-KLApplicationEntry_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KLApplicationEntry_Example.release.xcconfig"; sourceTree = "<group>"; };
 		D5E9426C94A141FE6BB8CF4BD95F00C9 /* UITabBarController+Init.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITabBarController+Init.h"; path = "KLApplicationEntry/Classes/UITabBarController+Init.h"; sourceTree = "<group>"; };
@@ -218,7 +218,6 @@
 				4B918584FD15218E19EAA84172C6139A /* UIViewController+KLNavigaitonController.m */,
 				0150CDD056C45A74452FA357DAE992D4 /* Support Files */,
 			);
-			name = KLNavigationController;
 			path = KLNavigationController;
 			sourceTree = "<group>";
 		};
@@ -455,6 +454,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
 			productRefGroup = EE87C45927C390FA2C8E7542069532D7 /* Products */;
@@ -751,8 +751,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};

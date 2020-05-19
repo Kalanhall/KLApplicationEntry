@@ -18,7 +18,9 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    self.view.backgroundColor = UIColor.whiteColor;
+    self.view.backgroundColor = [UIColor colorWithRed:0.95 green:0.95 blue:0.95 alpha:1];
+    
+    [self.navigationItem.leftBarButtonItem setTitleTextAttributes:nil forState:0];
 }
 
 - (void)didReceiveMemoryWarning
