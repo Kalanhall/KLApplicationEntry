@@ -354,12 +354,10 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-KLApplicationEntry_Example/Pods-KLApplicationEntry_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/KLApplicationEntry/KLApplicationEntry.framework",
-				"${BUILT_PRODUCTS_DIR}/KLNavigationController/KLNavigationController.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KLApplicationEntry.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KLNavigationController.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

@@ -21,23 +21,23 @@
     
     NSArray *controllers =
     @[
-    [KLNavigationController navigationWithRootViewController:KLViewController.new
+    [UINavigationController navigationWithRootViewController:KLViewController.new
                                                        title:@"闲鱼" image:@"tab0-n" selectedImage:@"tab0-s"],
-    [KLNavigationController navigationWithRootViewController:KLViewController.new
+    [UINavigationController navigationWithRootViewController:KLViewController.new
                                                        title:@"鱼塘" image:@"tab1-n" selectedImage:@"tab1-s"],
-    [KLNavigationController navigationWithRootViewController:KLViewController.new
+    [UINavigationController navigationWithRootViewController:KLViewController.new
                                                        title:@"发布" image:@"tab2-n" selectedImage:@"tab2-n"],
-    [KLNavigationController navigationWithRootViewController:KLViewController.new
+    [UINavigationController navigationWithRootViewController:KLViewController.new
                                                        title:@"消息" image:@"tab3-n" selectedImage:@"tab3-s"],
-    [KLNavigationController navigationWithRootViewController:KLViewController.new
+    [UINavigationController navigationWithRootViewController:KLViewController.new
                                                        title:@"我的" image:@"tab4-n" selectedImage:@"tab4-s"]
     ];
     KLTabBarController *vc = [KLTabBarController tabBarWithControllers:controllers];
     
     // MARK: - 导航栏全局设置
-    [KLNavigationController setAppearanceTincolor:UIColor.blackColor];
-    [KLNavigationController setAppearanceBarTincolor:UIColor.whiteColor];
-    [KLNavigationController setAppearanceBackIndicatorImage:[UIImage imageNamed:@"back"]];
+    [UINavigationController setAppearanceTincolor:UIColor.blackColor];
+    [UINavigationController setAppearanceBarTincolor:UIColor.whiteColor];
+    [UINavigationController setAppearanceBackIndicatorImage:[UIImage imageNamed:@"back"]];
     
     // MARK: - 选项卡全局设置
     // 设置阴影线颜色，当只有设置了背景图后才生效

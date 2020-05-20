@@ -7,32 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0BC27FE14E29E25D8EF9F9EA48BE69A8 /* KLNavigationController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ECC6BE21A5B6D1785263DC61755B2F9A /* KLNavigationController-dummy.m */; };
-		0F33078465AFED5F820B5CCF463DCCE8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0B46895AC6960DBADC1563F60D6696A /* Foundation.framework */; };
-		15BADA98BB20D0E6B316F4991082678D /* KLNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 41AB521F874F8E407CC15178F1DAE531 /* KLNavigationBar.m */; };
-		1843159A499E37D7315785A13279F23A /* UITabBar+Init.h in Headers */ = {isa = PBXBuildFile; fileRef = F61B848C982C1AB2C0660E3937D05D43 /* UITabBar+Init.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1B1C698AC5F050D99A23DA64F0F27DC4 /* UIViewController+KLNavigaitonController.m in Sources */ = {isa = PBXBuildFile; fileRef = E33F82599DC55100748F6C9D09E55A55 /* UIViewController+KLNavigaitonController.m */; };
-		1F6628872F3AADAFD17FCABF3B09F59B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0B46895AC6960DBADC1563F60D6696A /* Foundation.framework */; };
-		3787A624A58AF08E268BD8B46A0E6ED8 /* KLNavigationController+Init.m in Sources */ = {isa = PBXBuildFile; fileRef = 605693FCB7BAA4ADD63D95FF65CEE354 /* KLNavigationController+Init.m */; };
-		42FDB7D6247777926D70395BED724BE9 /* KLNavigationController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C9E30E83F91BAABD9E4B3DDCB88704E /* KLNavigationController.framework */; };
-		4D9E6E05715B132C03DC83BC0F1D1511 /* KLNavigationController+Init.h in Headers */ = {isa = PBXBuildFile; fileRef = 7DCE996DF977C730DDF3E07BA9C869BC /* KLNavigationController+Init.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		56B13787110C35F2FD2BE40BEA260E3F /* Pods-KLApplicationEntry_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B83A81162F7A8BC050C84FC92A5EBCE5 /* Pods-KLApplicationEntry_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		750C47E143712629EDA092B24DC2F94E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0B46895AC6960DBADC1563F60D6696A /* Foundation.framework */; };
-		7DEBCF4364570F3F402AF9B99EEFF592 /* KLNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0273DFED1F03D3C4646E5FA0F8204856 /* KLNavigationController.m */; };
-		84522FB936E3F38096AEB5D15267C217 /* KLNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 01A538BA2C3D035BC30DA7B0913644DE /* KLNavigationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9346D73AEBAD3E5B2B02AC670FFE95AC /* KLNavigationBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 23DCA10F0D6B79FBCF84D434EB3D2D70 /* KLNavigationBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9438D8EF0930049C63C4A0EBC845241D /* UITabBarController+Init.h in Headers */ = {isa = PBXBuildFile; fileRef = 955456CBDBC9D758398D312A79A61E80 /* UITabBarController+Init.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9831C5549D3A9D4A0404E2E7BFBC68FF /* KLNavigationController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 71E45843AA102F5FE1BF02228C5B9D9E /* KLNavigationController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A24EB2045E471E1B0EFA48E7E8E164F8 /* UITabBar+Init.m in Sources */ = {isa = PBXBuildFile; fileRef = 5941B91D100D79779F7623CF586C25AF /* UITabBar+Init.m */; };
-		A2AA54983E0C4E3D6E59FEDB9BBDF931 /* UITabBarController+Init.m in Sources */ = {isa = PBXBuildFile; fileRef = 201809BB10A858A63D06385052BDF485 /* UITabBarController+Init.m */; };
-		A2E34E67D039919CCF9993724249999A /* KLApplicationEntry-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 06F25A70499C7055039C466832CA8C47 /* KLApplicationEntry-dummy.m */; };
-		B8D39D146233455D826FBE537AAA2D80 /* Pods-KLApplicationEntry_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A2A4833E92E2ADD83657F039AAE35CAF /* Pods-KLApplicationEntry_Example-dummy.m */; };
+		073A7ECA76ADE2E62839C09980DF9E6D /* KLApplicationEntry-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 598128E851D9634D5269F7DDCBE5DFAF /* KLApplicationEntry-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		101F3782A72FB066949E2B7404D194A0 /* UINavigationController+Init.h in Headers */ = {isa = PBXBuildFile; fileRef = 981128717138A865E2F1BD5A0610CF6D /* UINavigationController+Init.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1F6628872F3AADAFD17FCABF3B09F59B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		24E1ADA67A690DF8F9146EF7F064FCC0 /* UITabBar+Init.h in Headers */ = {isa = PBXBuildFile; fileRef = 4528F41D70BF006BDF3F9124873694B1 /* UITabBar+Init.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		44BC7D04A983B7F1378F9C26AF617BDD /* UITabBarController+Init.m in Sources */ = {isa = PBXBuildFile; fileRef = D3E93347B7BE851E6D22D2F7F4DF18AD /* UITabBarController+Init.m */; };
+		4F691ACB873C83E44CDDC49C9F7ABFFA /* UITabBarController+Init.h in Headers */ = {isa = PBXBuildFile; fileRef = 580C7501C1E63F2003D3A50E1B76027E /* UITabBarController+Init.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		66D693D163B0056DAF92DE4D7D157240 /* Pods-KLApplicationEntry_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B83A81162F7A8BC050C84FC92A5EBCE5 /* Pods-KLApplicationEntry_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		72DCDE0D20AA20AF82306E73E0653337 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		7F82D98BF95FE07F78A66A5D52483F65 /* KLApplicationEntry-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 81572345A549AFDD5BCFAEEB9B6A5BA0 /* KLApplicationEntry-dummy.m */; };
+		A13B1B9FFEEDD53472BC2DB1BA492B1F /* UITabBar+Init.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AE7A8499ACBB38FCB3ECBE5AC2877FC /* UITabBar+Init.m */; };
+		C02613F13DE70747B60A9AF0639EE876 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		C245170F7375EE6360B89E5419511F4D /* Pods-KLApplicationEntry_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B5E200F637E4B09FC999EE725B0F6808 /* Pods-KLApplicationEntry_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C56C00BEC8FCBFC6C7F8D3912F13FD92 /* UIViewController+KLNavigaitonController.h in Headers */ = {isa = PBXBuildFile; fileRef = 166C8A7FBCE32C9D8A09D12F94B8B976 /* UIViewController+KLNavigaitonController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D9D61147BF9D58C2455DB71964F29EB2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0B46895AC6960DBADC1563F60D6696A /* Foundation.framework */; };
-		F2C7F68CF4A7C107AC7BEE3AACF0EB51 /* KLNavigationHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = A68B98881F1EB78815847950200D343E /* KLNavigationHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C7DC97E3D98C56C8B37784AC9143EE6C /* UINavigationController+Init.m in Sources */ = {isa = PBXBuildFile; fileRef = BA4D2C3D3D80AFD8C4667857F96C15A9 /* UINavigationController+Init.m */; };
+		CC8AD30B7D69A878BC10392D5C4A4FC4 /* Pods-KLApplicationEntry_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A2A4833E92E2ADD83657F039AAE35CAF /* Pods-KLApplicationEntry_Example-dummy.m */; };
 		F4239BEF99D5EACCACEAD9819DAB424D /* Pods-KLApplicationEntry_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 026DB0E9E9A154E4E0BBD0748399DF10 /* Pods-KLApplicationEntry_Tests-dummy.m */; };
-		F96BEE31F990F56122F75277EA25E710 /* KLApplicationEntry-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3ECC9DC36194F73BA600D7AD87F75F77 /* KLApplicationEntry-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,21 +32,7 @@
 			remoteGlobalIDString = 5FA0826DFDA27C8A04E989803C617DA8;
 			remoteInfo = "Pods-KLApplicationEntry_Example";
 		};
-		5B810B34F939F616B595E8E4EFB1BE68 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F7D9A737769A4D9A89068096BBDC861A;
-			remoteInfo = KLNavigationController;
-		};
-		893380952948DB7BD2B1C38EFF895785 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F7D9A737769A4D9A89068096BBDC861A;
-			remoteInfo = KLNavigationController;
-		};
-		9AB419E1A14A45F3374818A5081F67A0 /* PBXContainerItemProxy */ = {
+		25A62CB3D2AAC391F87DD4B45BF8F0B3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -67,85 +42,60 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		01A538BA2C3D035BC30DA7B0913644DE /* KLNavigationController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KLNavigationController.h; path = KLNavigationController/Classes/KLNavigationController.h; sourceTree = "<group>"; };
 		026DB0E9E9A154E4E0BBD0748399DF10 /* Pods-KLApplicationEntry_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KLApplicationEntry_Tests-dummy.m"; sourceTree = "<group>"; };
-		0273DFED1F03D3C4646E5FA0F8204856 /* KLNavigationController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KLNavigationController.m; path = KLNavigationController/Classes/KLNavigationController.m; sourceTree = "<group>"; };
 		031DC7BEED172695C79249ECFF5B6E09 /* KLApplicationEntry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = KLApplicationEntry.framework; path = KLApplicationEntry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		06F25A70499C7055039C466832CA8C47 /* KLApplicationEntry-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KLApplicationEntry-dummy.m"; sourceTree = "<group>"; };
 		0976E0FEC6F3063DC898189829E81826 /* Pods-KLApplicationEntry_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KLApplicationEntry_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		09EC9E38E49B62DD98898EF81BB684C7 /* Pods-KLApplicationEntry_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KLApplicationEntry_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		0C24830D318A6DACFE78BAAB129E9B07 /* Pods_KLApplicationEntry_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_KLApplicationEntry_Example.framework; path = "Pods-KLApplicationEntry_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0FB3786B965EFFDC5E2A0E161FF5AF83 /* KLApplicationEntry.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KLApplicationEntry.release.xcconfig; sourceTree = "<group>"; };
 		10D10E829948A996A96223BE9C178562 /* Pods-KLApplicationEntry_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KLApplicationEntry_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		115CD8E5595CF5199C20BCB760292FDC /* Pods-KLApplicationEntry_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-KLApplicationEntry_Example.modulemap"; sourceTree = "<group>"; };
-		166C8A7FBCE32C9D8A09D12F94B8B976 /* UIViewController+KLNavigaitonController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+KLNavigaitonController.h"; path = "KLNavigationController/Classes/UIViewController+KLNavigaitonController.h"; sourceTree = "<group>"; };
-		1C9E30E83F91BAABD9E4B3DDCB88704E /* KLNavigationController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KLNavigationController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1D16C94B696C21ECD758DAAA7550B398 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		201809BB10A858A63D06385052BDF485 /* UITabBarController+Init.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITabBarController+Init.m"; path = "KLApplicationEntry/Classes/UITabBarController+Init.m"; sourceTree = "<group>"; };
-		23DCA10F0D6B79FBCF84D434EB3D2D70 /* KLNavigationBar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KLNavigationBar.h; path = KLNavigationController/Classes/KLNavigationBar.h; sourceTree = "<group>"; };
-		279D10233291D153A64220EFB822E99A /* KLApplicationEntry-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "KLApplicationEntry-Info.plist"; sourceTree = "<group>"; };
+		1AE7A8499ACBB38FCB3ECBE5AC2877FC /* UITabBar+Init.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITabBar+Init.m"; path = "KLApplicationEntry/Classes/UITabBar+Init.m"; sourceTree = "<group>"; };
 		2F5679CF1352DB94BCB6600D0E69B7C8 /* Pods-KLApplicationEntry_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KLApplicationEntry_Tests-Info.plist"; sourceTree = "<group>"; };
-		341439DD476EF45A15FF35F34DC2EC40 /* KLNavigationController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = KLNavigationController.modulemap; sourceTree = "<group>"; };
-		3C86A96E9C4AC29B3E9B59D79BDA7796 /* KLNavigationController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KLNavigationController.debug.xcconfig; sourceTree = "<group>"; };
-		3ECC9DC36194F73BA600D7AD87F75F77 /* KLApplicationEntry-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KLApplicationEntry-umbrella.h"; sourceTree = "<group>"; };
-		41AB521F874F8E407CC15178F1DAE531 /* KLNavigationBar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KLNavigationBar.m; path = KLNavigationController/Classes/KLNavigationBar.m; sourceTree = "<group>"; };
-		47C9BF8D87244C95D554A93E1E5FB7F7 /* KLApplicationEntry.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KLApplicationEntry.debug.xcconfig; sourceTree = "<group>"; };
-		4B11349CC4AF1E0CF3B2E6E17260B561 /* KLNavigationController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KLNavigationController-prefix.pch"; sourceTree = "<group>"; };
+		30F65721DF6F4D13CC48175DF5810060 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		338B13DDC5E110B0490368637DA75A3B /* KLApplicationEntry-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KLApplicationEntry-prefix.pch"; sourceTree = "<group>"; };
+		35E3A32DD454AEBD7E80DF4D67142166 /* KLApplicationEntry.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KLApplicationEntry.debug.xcconfig; sourceTree = "<group>"; };
+		4528F41D70BF006BDF3F9124873694B1 /* UITabBar+Init.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITabBar+Init.h"; path = "KLApplicationEntry/Classes/UITabBar+Init.h"; sourceTree = "<group>"; };
+		4ADCFBE2DB0A0369DE0A863865E2A9E4 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		516BD0332B3FEA9EABB1AE3AD60205D1 /* Pods-KLApplicationEntry_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KLApplicationEntry_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		5941B91D100D79779F7623CF586C25AF /* UITabBar+Init.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITabBar+Init.m"; path = "KLApplicationEntry/Classes/UITabBar+Init.m"; sourceTree = "<group>"; };
-		605693FCB7BAA4ADD63D95FF65CEE354 /* KLNavigationController+Init.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "KLNavigationController+Init.m"; path = "KLApplicationEntry/Classes/KLNavigationController+Init.m"; sourceTree = "<group>"; };
-		6C10E2C362029DC2B9DBA39D193A342E /* KLApplicationEntry.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KLApplicationEntry.release.xcconfig; sourceTree = "<group>"; };
-		71E45843AA102F5FE1BF02228C5B9D9E /* KLNavigationController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KLNavigationController-umbrella.h"; sourceTree = "<group>"; };
-		7DCE996DF977C730DDF3E07BA9C869BC /* KLNavigationController+Init.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "KLNavigationController+Init.h"; path = "KLApplicationEntry/Classes/KLNavigationController+Init.h"; sourceTree = "<group>"; };
-		955456CBDBC9D758398D312A79A61E80 /* UITabBarController+Init.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITabBarController+Init.h"; path = "KLApplicationEntry/Classes/UITabBarController+Init.h"; sourceTree = "<group>"; };
+		580C7501C1E63F2003D3A50E1B76027E /* UITabBarController+Init.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITabBarController+Init.h"; path = "KLApplicationEntry/Classes/UITabBarController+Init.h"; sourceTree = "<group>"; };
+		598128E851D9634D5269F7DDCBE5DFAF /* KLApplicationEntry-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KLApplicationEntry-umbrella.h"; sourceTree = "<group>"; };
+		81572345A549AFDD5BCFAEEB9B6A5BA0 /* KLApplicationEntry-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KLApplicationEntry-dummy.m"; sourceTree = "<group>"; };
+		981128717138A865E2F1BD5A0610CF6D /* UINavigationController+Init.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UINavigationController+Init.h"; path = "KLApplicationEntry/Classes/UINavigationController+Init.h"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A2A4833E92E2ADD83657F039AAE35CAF /* Pods-KLApplicationEntry_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KLApplicationEntry_Example-dummy.m"; sourceTree = "<group>"; };
 		A2BF65A27201CF0B5E657BF73C52F636 /* Pods_KLApplicationEntry_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_KLApplicationEntry_Tests.framework; path = "Pods-KLApplicationEntry_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A43721664B08962B242EA2D67D86464B /* KLApplicationEntry.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = KLApplicationEntry.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A68B98881F1EB78815847950200D343E /* KLNavigationHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KLNavigationHeader.h; path = KLNavigationController/Classes/KLNavigationHeader.h; sourceTree = "<group>"; };
+		A6E32FBAA19A27D7BA9F6E20F37CBA34 /* KLApplicationEntry-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "KLApplicationEntry-Info.plist"; sourceTree = "<group>"; };
 		B0FA4BB86BADDDC2B140260B101CC4FB /* Pods-KLApplicationEntry_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KLApplicationEntry_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		B22B7D100E8D1CBC3B89F61B8C61C072 /* KLNavigationController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = KLNavigationController.framework; path = KLNavigationController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5E200F637E4B09FC999EE725B0F6808 /* Pods-KLApplicationEntry_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KLApplicationEntry_Tests-umbrella.h"; sourceTree = "<group>"; };
 		B83A81162F7A8BC050C84FC92A5EBCE5 /* Pods-KLApplicationEntry_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KLApplicationEntry_Example-umbrella.h"; sourceTree = "<group>"; };
-		BEAEE83221884939B7AFF78FD589202F /* KLNavigationController-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "KLNavigationController-Info.plist"; sourceTree = "<group>"; };
-		C0B46895AC6960DBADC1563F60D6696A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		CE8E224BC3F109078EF9E949D43E924E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		BA13890BFAE9A18ED899C05FF1B9C29C /* KLApplicationEntry.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = KLApplicationEntry.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BA4D2C3D3D80AFD8C4667857F96C15A9 /* UINavigationController+Init.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UINavigationController+Init.m"; path = "KLApplicationEntry/Classes/UINavigationController+Init.m"; sourceTree = "<group>"; };
 		D38EC6A98F18488DAB704549C2885DE8 /* Pods-KLApplicationEntry_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KLApplicationEntry_Example.release.xcconfig"; sourceTree = "<group>"; };
-		D4C63F4127A14B779E0C82C301154DF8 /* KLApplicationEntry.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = KLApplicationEntry.modulemap; sourceTree = "<group>"; };
-		D4E9C219CA924E2B947862DF4A32B90D /* KLApplicationEntry-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KLApplicationEntry-prefix.pch"; sourceTree = "<group>"; };
+		D3E93347B7BE851E6D22D2F7F4DF18AD /* UITabBarController+Init.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITabBarController+Init.m"; path = "KLApplicationEntry/Classes/UITabBarController+Init.m"; sourceTree = "<group>"; };
 		DBA0E045221AEBD5D04604B2679431EF /* Pods-KLApplicationEntry_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-KLApplicationEntry_Tests.modulemap"; sourceTree = "<group>"; };
 		DD5D70B9E7D4366E17C1B95F17FD9137 /* Pods-KLApplicationEntry_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KLApplicationEntry_Example-frameworks.sh"; sourceTree = "<group>"; };
-		E33F82599DC55100748F6C9D09E55A55 /* UIViewController+KLNavigaitonController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+KLNavigaitonController.m"; path = "KLNavigationController/Classes/UIViewController+KLNavigaitonController.m"; sourceTree = "<group>"; };
 		EBCD70A71F19012B401E65AB8E307ADB /* Pods-KLApplicationEntry_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KLApplicationEntry_Example-Info.plist"; sourceTree = "<group>"; };
 		EBD1A97E7EC13C0837787E60A75D9902 /* Pods-KLApplicationEntry_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KLApplicationEntry_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		EC31B666147A2F15DFAEBC5FEFF60504 /* KLApplicationEntry.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = KLApplicationEntry.modulemap; sourceTree = "<group>"; };
 		EC6531B72E8FD0CFB48785A1C2CA31EB /* Pods-KLApplicationEntry_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KLApplicationEntry_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		ECC6BE21A5B6D1785263DC61755B2F9A /* KLNavigationController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KLNavigationController-dummy.m"; sourceTree = "<group>"; };
-		F55545B84BD57B98B50AD5C927F1D5AA /* KLNavigationController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KLNavigationController.release.xcconfig; sourceTree = "<group>"; };
-		F61B848C982C1AB2C0660E3937D05D43 /* UITabBar+Init.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITabBar+Init.h"; path = "KLApplicationEntry/Classes/UITabBar+Init.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		5ADD694EBA07584E43B2ED732E65EC8D /* Frameworks */ = {
+		10B9718B79D00A950337C0FE998CC6C0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				750C47E143712629EDA092B24DC2F94E /* Foundation.framework in Frameworks */,
-				42FDB7D6247777926D70395BED724BE9 /* KLNavigationController.framework in Frameworks */,
+				72DCDE0D20AA20AF82306E73E0653337 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6A32D6369C0A7B5366019FFE8FDCE506 /* Frameworks */ = {
+		4855039C879FA37A2F2A80D6C7C50E1C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0F33078465AFED5F820B5CCF463DCCE8 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A0B7F488F04F1829222A131F554F6F76 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D9D61147BF9D58C2455DB71964F29EB2 /* Foundation.framework in Frameworks */,
+				C02613F13DE70747B60A9AF0639EE876 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,18 +135,10 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		32A5E27BD8281B94AFC0A73CE850C576 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				C0B46895AC6960DBADC1563F60D6696A /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
 		421C03BA2C8AC266C7EACB5ED7C48999 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				DB28017DE872153C92B72D715C0C13C3 /* KLApplicationEntry */,
+				A2BD577586EC3534BDCBB41AAE5527FC /* KLApplicationEntry */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
@@ -218,60 +160,48 @@
 			path = "Target Support Files/Pods-KLApplicationEntry_Example";
 			sourceTree = "<group>";
 		};
-		6BADF171BF69F0A2971EDE6BBAC34F7E /* KLNavigationController */ = {
+		8581BDF4429F6EB8372DCF56865F487B /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				23DCA10F0D6B79FBCF84D434EB3D2D70 /* KLNavigationBar.h */,
-				41AB521F874F8E407CC15178F1DAE531 /* KLNavigationBar.m */,
-				01A538BA2C3D035BC30DA7B0913644DE /* KLNavigationController.h */,
-				0273DFED1F03D3C4646E5FA0F8204856 /* KLNavigationController.m */,
-				A68B98881F1EB78815847950200D343E /* KLNavigationHeader.h */,
-				166C8A7FBCE32C9D8A09D12F94B8B976 /* UIViewController+KLNavigaitonController.h */,
-				E33F82599DC55100748F6C9D09E55A55 /* UIViewController+KLNavigaitonController.m */,
-				8F98197C2E1D0591673E7F25952882C6 /* Support Files */,
-			);
-			name = KLNavigationController;
-			path = KLNavigationController;
-			sourceTree = "<group>";
-		};
-		6BC5332D9B7B9A1B53DC246CCE49BF5E /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				A43721664B08962B242EA2D67D86464B /* KLApplicationEntry.podspec */,
-				CE8E224BC3F109078EF9E949D43E924E /* LICENSE */,
-				1D16C94B696C21ECD758DAAA7550B398 /* README.md */,
+				BA13890BFAE9A18ED899C05FF1B9C29C /* KLApplicationEntry.podspec */,
+				4ADCFBE2DB0A0369DE0A863865E2A9E4 /* LICENSE */,
+				30F65721DF6F4D13CC48175DF5810060 /* README.md */,
 			);
 			name = Pod;
 			sourceTree = "<group>";
 		};
-		8F98197C2E1D0591673E7F25952882C6 /* Support Files */ = {
+		A2BD577586EC3534BDCBB41AAE5527FC /* KLApplicationEntry */ = {
 			isa = PBXGroup;
 			children = (
-				341439DD476EF45A15FF35F34DC2EC40 /* KLNavigationController.modulemap */,
-				ECC6BE21A5B6D1785263DC61755B2F9A /* KLNavigationController-dummy.m */,
-				BEAEE83221884939B7AFF78FD589202F /* KLNavigationController-Info.plist */,
-				4B11349CC4AF1E0CF3B2E6E17260B561 /* KLNavigationController-prefix.pch */,
-				71E45843AA102F5FE1BF02228C5B9D9E /* KLNavigationController-umbrella.h */,
-				3C86A96E9C4AC29B3E9B59D79BDA7796 /* KLNavigationController.debug.xcconfig */,
-				F55545B84BD57B98B50AD5C927F1D5AA /* KLNavigationController.release.xcconfig */,
+				981128717138A865E2F1BD5A0610CF6D /* UINavigationController+Init.h */,
+				BA4D2C3D3D80AFD8C4667857F96C15A9 /* UINavigationController+Init.m */,
+				4528F41D70BF006BDF3F9124873694B1 /* UITabBar+Init.h */,
+				1AE7A8499ACBB38FCB3ECBE5AC2877FC /* UITabBar+Init.m */,
+				580C7501C1E63F2003D3A50E1B76027E /* UITabBarController+Init.h */,
+				D3E93347B7BE851E6D22D2F7F4DF18AD /* UITabBarController+Init.m */,
+				8581BDF4429F6EB8372DCF56865F487B /* Pod */,
+				EC46308AA0C91C03A4F7E60D0C86594D /* Support Files */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/KLNavigationController";
+			name = KLApplicationEntry;
+			path = ../..;
 			sourceTree = "<group>";
 		};
-		BB3DDE536A54B8326275F5D91E0978EA /* Support Files */ = {
+		A5B11EF10F7E15BDE4B4C63823828BEE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D4C63F4127A14B779E0C82C301154DF8 /* KLApplicationEntry.modulemap */,
-				06F25A70499C7055039C466832CA8C47 /* KLApplicationEntry-dummy.m */,
-				279D10233291D153A64220EFB822E99A /* KLApplicationEntry-Info.plist */,
-				D4E9C219CA924E2B947862DF4A32B90D /* KLApplicationEntry-prefix.pch */,
-				3ECC9DC36194F73BA600D7AD87F75F77 /* KLApplicationEntry-umbrella.h */,
-				47C9BF8D87244C95D554A93E1E5FB7F7 /* KLApplicationEntry.debug.xcconfig */,
-				6C10E2C362029DC2B9DBA39D193A342E /* KLApplicationEntry.release.xcconfig */,
+				031DC7BEED172695C79249ECFF5B6E09 /* KLApplicationEntry.framework */,
+				0C24830D318A6DACFE78BAAB129E9B07 /* Pods_KLApplicationEntry_Example.framework */,
+				A2BF65A27201CF0B5E657BF73C52F636 /* Pods_KLApplicationEntry_Tests.framework */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/KLApplicationEntry";
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -279,77 +209,46 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				421C03BA2C8AC266C7EACB5ED7C48999 /* Development Pods */,
-				E4A4492C8326093D475C20652BAE7F91 /* Frameworks */,
-				FA7829E7101D6EB78D1CB7DCA0687291 /* Pods */,
-				EE87C45927C390FA2C8E7542069532D7 /* Products */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				A5B11EF10F7E15BDE4B4C63823828BEE /* Products */,
 				312946B4FD355BF6140DA22A3FB66FA4 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		DB28017DE872153C92B72D715C0C13C3 /* KLApplicationEntry */ = {
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7DCE996DF977C730DDF3E07BA9C869BC /* KLNavigationController+Init.h */,
-				605693FCB7BAA4ADD63D95FF65CEE354 /* KLNavigationController+Init.m */,
-				F61B848C982C1AB2C0660E3937D05D43 /* UITabBar+Init.h */,
-				5941B91D100D79779F7623CF586C25AF /* UITabBar+Init.m */,
-				955456CBDBC9D758398D312A79A61E80 /* UITabBarController+Init.h */,
-				201809BB10A858A63D06385052BDF485 /* UITabBarController+Init.m */,
-				6BC5332D9B7B9A1B53DC246CCE49BF5E /* Pod */,
-				BB3DDE536A54B8326275F5D91E0978EA /* Support Files */,
-			);
-			name = KLApplicationEntry;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		E4A4492C8326093D475C20652BAE7F91 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				1C9E30E83F91BAABD9E4B3DDCB88704E /* KLNavigationController.framework */,
-				32A5E27BD8281B94AFC0A73CE850C576 /* iOS */,
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		EE87C45927C390FA2C8E7542069532D7 /* Products */ = {
+		EC46308AA0C91C03A4F7E60D0C86594D /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				031DC7BEED172695C79249ECFF5B6E09 /* KLApplicationEntry.framework */,
-				B22B7D100E8D1CBC3B89F61B8C61C072 /* KLNavigationController.framework */,
-				0C24830D318A6DACFE78BAAB129E9B07 /* Pods_KLApplicationEntry_Example.framework */,
-				A2BF65A27201CF0B5E657BF73C52F636 /* Pods_KLApplicationEntry_Tests.framework */,
+				EC31B666147A2F15DFAEBC5FEFF60504 /* KLApplicationEntry.modulemap */,
+				81572345A549AFDD5BCFAEEB9B6A5BA0 /* KLApplicationEntry-dummy.m */,
+				A6E32FBAA19A27D7BA9F6E20F37CBA34 /* KLApplicationEntry-Info.plist */,
+				338B13DDC5E110B0490368637DA75A3B /* KLApplicationEntry-prefix.pch */,
+				598128E851D9634D5269F7DDCBE5DFAF /* KLApplicationEntry-umbrella.h */,
+				35E3A32DD454AEBD7E80DF4D67142166 /* KLApplicationEntry.debug.xcconfig */,
+				0FB3786B965EFFDC5E2A0E161FF5AF83 /* KLApplicationEntry.release.xcconfig */,
 			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		FA7829E7101D6EB78D1CB7DCA0687291 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				6BADF171BF69F0A2971EDE6BBAC34F7E /* KLNavigationController */,
-			);
-			name = Pods;
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/KLApplicationEntry";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		019E2D00B8D8F550658E8B165A2A0D1C /* Headers */ = {
+		8C89656D97152ABD11F9999EB8C2DA07 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				56B13787110C35F2FD2BE40BEA260E3F /* Pods-KLApplicationEntry_Example-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0A8295F85378660F0695A2087386C342 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9346D73AEBAD3E5B2B02AC670FFE95AC /* KLNavigationBar.h in Headers */,
-				9831C5549D3A9D4A0404E2E7BFBC68FF /* KLNavigationController-umbrella.h in Headers */,
-				84522FB936E3F38096AEB5D15267C217 /* KLNavigationController.h in Headers */,
-				F2C7F68CF4A7C107AC7BEE3AACF0EB51 /* KLNavigationHeader.h in Headers */,
-				C56C00BEC8FCBFC6C7F8D3912F13FD92 /* UIViewController+KLNavigaitonController.h in Headers */,
+				073A7ECA76ADE2E62839C09980DF9E6D /* KLApplicationEntry-umbrella.h in Headers */,
+				101F3782A72FB066949E2B7404D194A0 /* UINavigationController+Init.h in Headers */,
+				24E1ADA67A690DF8F9146EF7F064FCC0 /* UITabBar+Init.h in Headers */,
+				4F691ACB873C83E44CDDC49C9F7ABFFA /* UITabBarController+Init.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,14 +260,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CDE1F51B267A8E819B315F0F93299598 /* Headers */ = {
+		E9FF22186EA7372D073066687F21739F /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F96BEE31F990F56122F75277EA25E710 /* KLApplicationEntry-umbrella.h in Headers */,
-				4D9E6E05715B132C03DC83BC0F1D1511 /* KLNavigationController+Init.h in Headers */,
-				1843159A499E37D7315785A13279F23A /* UITabBar+Init.h in Headers */,
-				9438D8EF0930049C63C4A0EBC845241D /* UITabBarController+Init.h in Headers */,
+				66D693D163B0056DAF92DE4D7D157240 /* Pods-KLApplicationEntry_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -377,18 +273,17 @@
 /* Begin PBXNativeTarget section */
 		5FA0826DFDA27C8A04E989803C617DA8 /* Pods-KLApplicationEntry_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CE579A5754CEE7AD76F067219E28086B /* Build configuration list for PBXNativeTarget "Pods-KLApplicationEntry_Example" */;
+			buildConfigurationList = 4751D9B4750105E55DAECED61FBBB7E4 /* Build configuration list for PBXNativeTarget "Pods-KLApplicationEntry_Example" */;
 			buildPhases = (
-				019E2D00B8D8F550658E8B165A2A0D1C /* Headers */,
-				8B24BB43E84DADE66A43F892DE5914D0 /* Sources */,
-				6A32D6369C0A7B5366019FFE8FDCE506 /* Frameworks */,
-				E2970A1F00C5CF0728D46ECC4E952D76 /* Resources */,
+				E9FF22186EA7372D073066687F21739F /* Headers */,
+				47709594A56983D920A3F3966D851A88 /* Sources */,
+				10B9718B79D00A950337C0FE998CC6C0 /* Frameworks */,
+				86F54C74219CEAE2A242624F7003C838 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				784CCCBD1043785ED46DA57E9414FDE1 /* PBXTargetDependency */,
-				01C4E77667323DEB36954740709DC510 /* PBXTargetDependency */,
+				6D05E3792A2D4B4C7A4C0CE03F6DA65A /* PBXTargetDependency */,
 			);
 			name = "Pods-KLApplicationEntry_Example";
 			productName = "Pods-KLApplicationEntry_Example";
@@ -397,17 +292,16 @@
 		};
 		7987EC58C6EAE1F748BC3F660EEE45FE /* KLApplicationEntry */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D3C46EDB7CFD679340009824158940E0 /* Build configuration list for PBXNativeTarget "KLApplicationEntry" */;
+			buildConfigurationList = DFAA4154E2BAB37D3774173DFA560D99 /* Build configuration list for PBXNativeTarget "KLApplicationEntry" */;
 			buildPhases = (
-				CDE1F51B267A8E819B315F0F93299598 /* Headers */,
-				943FD04838D63A8FEBCC711AF1AC17A7 /* Sources */,
-				5ADD694EBA07584E43B2ED732E65EC8D /* Frameworks */,
-				2488769BA6A973E29CF1F5716FBF0705 /* Resources */,
+				8C89656D97152ABD11F9999EB8C2DA07 /* Headers */,
+				FE51EEEF60AE307995E4DE9C3543B8D3 /* Sources */,
+				4855039C879FA37A2F2A80D6C7C50E1C /* Frameworks */,
+				921AF34511477265CFFB7B9B728A70B8 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				C8B0C66263B843A633746413A7854174 /* PBXTargetDependency */,
 			);
 			name = KLApplicationEntry;
 			productName = KLApplicationEntry;
@@ -433,24 +327,6 @@
 			productReference = A2BF65A27201CF0B5E657BF73C52F636 /* Pods_KLApplicationEntry_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		F7D9A737769A4D9A89068096BBDC861A /* KLNavigationController */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A5A27FE69A50BD00FD05BDDEC5BF2AEC /* Build configuration list for PBXNativeTarget "KLNavigationController" */;
-			buildPhases = (
-				0A8295F85378660F0695A2087386C342 /* Headers */,
-				6A8A296490F0AAACC9F5D34935D1E2C7 /* Sources */,
-				A0B7F488F04F1829222A131F554F6F76 /* Frameworks */,
-				59C301A44D6A882C7837E2EE27FC204A /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = KLNavigationController;
-			productName = KLNavigationController;
-			productReference = B22B7D100E8D1CBC3B89F61B8C61C072 /* KLNavigationController.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -469,12 +345,11 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = EE87C45927C390FA2C8E7542069532D7 /* Products */;
+			productRefGroup = A5B11EF10F7E15BDE4B4C63823828BEE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				7987EC58C6EAE1F748BC3F660EEE45FE /* KLApplicationEntry */,
-				F7D9A737769A4D9A89068096BBDC861A /* KLNavigationController */,
 				5FA0826DFDA27C8A04E989803C617DA8 /* Pods-KLApplicationEntry_Example */,
 				EA384CEAE260909F9F3602981FCA734B /* Pods-KLApplicationEntry_Tests */,
 			);
@@ -482,21 +357,14 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		2488769BA6A973E29CF1F5716FBF0705 /* Resources */ = {
+		86F54C74219CEAE2A242624F7003C838 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		59C301A44D6A882C7837E2EE27FC204A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E2970A1F00C5CF0728D46ECC4E952D76 /* Resources */ = {
+		921AF34511477265CFFB7B9B728A70B8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -513,33 +381,11 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		6A8A296490F0AAACC9F5D34935D1E2C7 /* Sources */ = {
+		47709594A56983D920A3F3966D851A88 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15BADA98BB20D0E6B316F4991082678D /* KLNavigationBar.m in Sources */,
-				0BC27FE14E29E25D8EF9F9EA48BE69A8 /* KLNavigationController-dummy.m in Sources */,
-				7DEBCF4364570F3F402AF9B99EEFF592 /* KLNavigationController.m in Sources */,
-				1B1C698AC5F050D99A23DA64F0F27DC4 /* UIViewController+KLNavigaitonController.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8B24BB43E84DADE66A43F892DE5914D0 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B8D39D146233455D826FBE537AAA2D80 /* Pods-KLApplicationEntry_Example-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		943FD04838D63A8FEBCC711AF1AC17A7 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A2E34E67D039919CCF9993724249999A /* KLApplicationEntry-dummy.m in Sources */,
-				3787A624A58AF08E268BD8B46A0E6ED8 /* KLNavigationController+Init.m in Sources */,
-				A24EB2045E471E1B0EFA48E7E8E164F8 /* UITabBar+Init.m in Sources */,
-				A2AA54983E0C4E3D6E59FEDB9BBDF931 /* UITabBarController+Init.m in Sources */,
+				CC8AD30B7D69A878BC10392D5C4A4FC4 /* Pods-KLApplicationEntry_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -551,26 +397,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FE51EEEF60AE307995E4DE9C3543B8D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F82D98BF95FE07F78A66A5D52483F65 /* KLApplicationEntry-dummy.m in Sources */,
+				C7DC97E3D98C56C8B37784AC9143EE6C /* UINavigationController+Init.m in Sources */,
+				A13B1B9FFEEDD53472BC2DB1BA492B1F /* UITabBar+Init.m in Sources */,
+				44BC7D04A983B7F1378F9C26AF617BDD /* UITabBarController+Init.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		01C4E77667323DEB36954740709DC510 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = KLNavigationController;
-			target = F7D9A737769A4D9A89068096BBDC861A /* KLNavigationController */;
-			targetProxy = 5B810B34F939F616B595E8E4EFB1BE68 /* PBXContainerItemProxy */;
-		};
-		784CCCBD1043785ED46DA57E9414FDE1 /* PBXTargetDependency */ = {
+		6D05E3792A2D4B4C7A4C0CE03F6DA65A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = KLApplicationEntry;
 			target = 7987EC58C6EAE1F748BC3F660EEE45FE /* KLApplicationEntry */;
-			targetProxy = 9AB419E1A14A45F3374818A5081F67A0 /* PBXContainerItemProxy */;
-		};
-		C8B0C66263B843A633746413A7854174 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = KLNavigationController;
-			target = F7D9A737769A4D9A89068096BBDC861A /* KLNavigationController */;
-			targetProxy = 893380952948DB7BD2B1C38EFF895785 /* PBXContainerItemProxy */;
+			targetProxy = 25A62CB3D2AAC391F87DD4B45BF8F0B3 /* PBXContainerItemProxy */;
 		};
 		D2C8D3F470A5923553997F1DE71C44FA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -615,7 +460,38 @@
 			};
 			name = Release;
 		};
-		47DE783275F71947BDD34298A097A3BD /* Debug */ = {
+		220D7055DF83ABE66457A7B95EF3E5AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35E3A32DD454AEBD7E80DF4D67142166 /* KLApplicationEntry.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/KLApplicationEntry/KLApplicationEntry-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KLApplicationEntry/KLApplicationEntry-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/KLApplicationEntry/KLApplicationEntry.modulemap";
+				PRODUCT_MODULE_NAME = KLApplicationEntry;
+				PRODUCT_NAME = KLApplicationEntry;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		62C99572AE5DBC6DD0D4BAAA8531C00B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 10D10E829948A996A96223BE9C178562 /* Pods-KLApplicationEntry_Example.debug.xcconfig */;
 			buildSettings = {
@@ -648,9 +524,9 @@
 			};
 			name = Debug;
 		};
-		73A6A64AF1192FA077EC42CCE486C56A /* Debug */ = {
+		73812A7D9DFE54167EE968BBFC46B4FB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 47C9BF8D87244C95D554A93E1E5FB7F7 /* KLApplicationEntry.debug.xcconfig */;
+			baseConfigurationReference = 0FB3786B965EFFDC5E2A0E161FF5AF83 /* KLApplicationEntry.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -674,10 +550,11 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		8F17DC3A99F99FBAD606CE6963886315 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -836,39 +713,7 @@
 			};
 			name = Debug;
 		};
-		9C5C0C9202D7F50E3CFC107F590E5464 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F55545B84BD57B98B50AD5C927F1D5AA /* KLNavigationController.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/KLNavigationController/KLNavigationController-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/KLNavigationController/KLNavigationController-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/KLNavigationController/KLNavigationController.modulemap";
-				PRODUCT_MODULE_NAME = KLNavigationController;
-				PRODUCT_NAME = KLNavigationController;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		9E9F00B0739FBCC34618C80823713A31 /* Release */ = {
+		B410055AC218000B5AAA7DC75C2393AF /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D38EC6A98F18488DAB704549C2885DE8 /* Pods-KLApplicationEntry_Example.release.xcconfig */;
 			buildSettings = {
@@ -902,69 +747,6 @@
 			};
 			name = Release;
 		};
-		C9019518B3FFBEF0AD29844276DB5EB8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3C86A96E9C4AC29B3E9B59D79BDA7796 /* KLNavigationController.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/KLNavigationController/KLNavigationController-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/KLNavigationController/KLNavigationController-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/KLNavigationController/KLNavigationController.modulemap";
-				PRODUCT_MODULE_NAME = KLNavigationController;
-				PRODUCT_NAME = KLNavigationController;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		CA547F3B085A91B3B38BE83E26A81187 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6C10E2C362029DC2B9DBA39D193A342E /* KLApplicationEntry.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/KLApplicationEntry/KLApplicationEntry-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/KLApplicationEntry/KLApplicationEntry-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/KLApplicationEntry/KLApplicationEntry.modulemap";
-				PRODUCT_MODULE_NAME = KLApplicationEntry;
-				PRODUCT_NAME = KLApplicationEntry;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -973,6 +755,15 @@
 			buildConfigurations = (
 				9426367178D2B178FDA7317D1E64D0BC /* Debug */,
 				1202AE620F4ACB9D18F1AF72270A24F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4751D9B4750105E55DAECED61FBBB7E4 /* Build configuration list for PBXNativeTarget "Pods-KLApplicationEntry_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62C99572AE5DBC6DD0D4BAAA8531C00B /* Debug */,
+				B410055AC218000B5AAA7DC75C2393AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -986,29 +777,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A5A27FE69A50BD00FD05BDDEC5BF2AEC /* Build configuration list for PBXNativeTarget "KLNavigationController" */ = {
+		DFAA4154E2BAB37D3774173DFA560D99 /* Build configuration list for PBXNativeTarget "KLApplicationEntry" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C9019518B3FFBEF0AD29844276DB5EB8 /* Debug */,
-				9C5C0C9202D7F50E3CFC107F590E5464 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CE579A5754CEE7AD76F067219E28086B /* Build configuration list for PBXNativeTarget "Pods-KLApplicationEntry_Example" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				47DE783275F71947BDD34298A097A3BD /* Debug */,
-				9E9F00B0739FBCC34618C80823713A31 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D3C46EDB7CFD679340009824158940E0 /* Build configuration list for PBXNativeTarget "KLApplicationEntry" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				73A6A64AF1192FA077EC42CCE486C56A /* Debug */,
-				CA547F3B085A91B3B38BE83E26A81187 /* Release */,
+				220D7055DF83ABE66457A7B95EF3E5AD /* Debug */,
+				73812A7D9DFE54167EE968BBFC46B4FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
