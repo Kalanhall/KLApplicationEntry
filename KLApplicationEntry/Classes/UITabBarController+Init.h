@@ -36,6 +36,20 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param index 指定Item
 - (void)setTabBarItemImageEdgeInsets:(UIEdgeInsets)imageEdgeInsets atIndex:(NSInteger)index;
 
+/// 设置自定义响应事件区域
+/// @param view 自定义视图
+/// @param index TabBarItem Index
+/// @param height 宽度是适配Item的，可以自定义高度，height = 0 则默认与宽相等
+- (void)addTabBarCustomAreaWithView:(UIView *)view atIndex:(NSInteger)index height:(CGFloat)height;
+
+/// 为每个TabBarItem自定义视图
+- (void)addTabBarCustomAreaForeachWithViews:(NSArray <UIView *>*)views height:(CGFloat)height;
+
+/// 设置选项卡指定自定义子控制器标题位移
+/// @param view 指定Item
+/// @param edgeInsets 图片边距位移 ，通过top bottom 来调整视图位置 
+- (void)resetTabBarCustomArea:(UIView *)view extendEdgeInsets:(UIEdgeInsets)edgeInsets;
+
 /// 设置选项卡背景颜色
 /// @param color 颜色
 - (void)setTabBarBackgroundImageWithColor:(nullable UIColor *)color;
@@ -50,11 +64,6 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param color 阴影颜色
 /// @param opacity 阴影透明度
 - (void)setTabBarShadowColor:(nullable UIColor *)color opacity:(CGFloat)opacity;
-
-/// 设置自定义响应事件区域
-/// @param index TabBarItem Index
-/// @param height 宽度是适配Item的，可以自定义高度，height = 0 则默认与宽相等
-- (void)setTabBarRespondAreaAtIndex:(NSInteger)index height:(CGFloat)height;
 
 /// 设置选项卡指定子控制器点击回调
 /// 设置自定义点击区域后，会回调该方法

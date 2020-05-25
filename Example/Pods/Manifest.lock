@@ -1,8 +1,14 @@
 PODS:
   - KLApplicationEntry (1.2.0)
+  - lottie-ios (2.5.3)
 
 DEPENDENCIES:
   - KLApplicationEntry (from `../`)
+  - lottie-ios (= 2.5.3)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - lottie-ios
 
 EXTERNAL SOURCES:
   KLApplicationEntry:
@@ -10,7 +16,8 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   KLApplicationEntry: 176716ad05d86dc58bb6c8dfe81c84c19ae76512
+  lottie-ios: a50d5c0160425cd4b01b852bb9578963e6d92d31
 
-PODFILE CHECKSUM: 5792251677734276d85759b1a3acfd05b6e9318f
+PODFILE CHECKSUM: a39f2893fa75b4faca918e6dc3d01716ceff0990
 
 COCOAPODS: 1.9.1

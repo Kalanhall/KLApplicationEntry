@@ -5,6 +5,7 @@ platform :ios, '9.0'
 
 target 'KLApplicationEntry_Example' do
   pod 'KLApplicationEntry', :path => '../'
+  pod 'lottie-ios',                 '2.5.3'
 
   target 'KLApplicationEntry_Tests' do
     inherit! :search_paths

@@ -29,33 +29,54 @@ const NSString *SELECT_CALLBACK_KEY = @"SELECT_CALLBACK_KEY";
     return tc;
 }
 
-- (void)setTabBarRespondAreaAtIndex:(NSInteger)index height:(CGFloat)height {
-    UIButton *control = [UIButton buttonWithType:UIButtonTypeCustom];
-    CGFloat w = self.tabBar.bounds.size.width/self.tabBar.items.count;
-    CGFloat h = height > 0 ? height : w;
-    CGFloat y = 0;
-    if (@available(iOS 11.0, *)) {
-        y = fabs(h * 0.5 - (self.tabBar.bounds.size.height - UIApplication.sharedApplication.keyWindow.safeAreaInsets.bottom));
-    } else {
-        y = fabs(h * 0.5 - self.tabBar.bounds.size.height);
-    }
-    control.bounds = CGRectMake(0, 0, w, h);
-    control.center = CGPointMake((index + 0.5) * w, y);
-    control.tag = index;
-    [self.tabBar addSubview:control];
-    [control addTarget:self action:@selector(tabBarItemControlCallBack:) forControlEvents:UIControlEventTouchUpInside];
-}
-
-- (void)tabBarItemControlCallBack:(UIButton *)sender {
-    if (self.shouldSelectViewController) {
-        self.shouldSelectViewController(sender.tag);
-    }
-}
-
 - (void)swipGesture:(UISwipeGestureRecognizer *)swip {
     if (self.swipeTabBarCallBack) {
         self.swipeTabBarCallBack(swip);
     }
+}
+
+- (void)addTabBarCustomAreaWithView:(UIView *)view atIndex:(NSInteger)index height:(CGFloat)height {
+    [self addTabBarCustomAreaForeachWithViews:@[view] height:height];
+    // 重置Frame
+    CGFloat x = index * view.bounds.size.width;
+    CGFloat y = 0;
+    CGFloat h = height;
+    if (h <= 0) {
+        if (@available(iOS 11.0, *)) {
+            h = self.tabBar.bounds.size.height - UIApplication.sharedApplication.keyWindow.safeAreaInsets.bottom;
+        } else {
+            h = self.tabBar.bounds.size.height;
+        }
+    }
+
+    view.frame = CGRectMake(x, y, view.bounds.size.width, h);
+}
+
+- (void)addTabBarCustomAreaForeachWithViews:(NSArray <UIView *>*)views height:(CGFloat)height {
+    [views enumerateObjectsUsingBlock:^(UIView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        CGFloat w = self.tabBar.bounds.size.width/self.tabBar.items.count;
+        CGFloat h = height;
+        if (h <= 0) {
+            if (@available(iOS 11.0, *)) {
+                h = self.tabBar.bounds.size.height - UIApplication.sharedApplication.keyWindow.safeAreaInsets.bottom;
+            } else {
+                h = self.tabBar.bounds.size.height;
+            }
+        }
+        CGFloat x = idx * w;
+        CGFloat y = 0;
+
+        obj.frame = CGRectMake(x, y, w, h);
+        obj.contentMode = UIViewContentModeScaleAspectFit;
+        [self.tabBar addSubview:obj];
+    }];
+}
+
+- (void)resetTabBarCustomArea:(UIView *)view extendEdgeInsets:(UIEdgeInsets)edgeInsets {
+    view.frame = CGRectMake(view.frame.origin.x,
+                            view.frame.origin.y + edgeInsets.top,
+                            view.frame.size.width,
+                            view.frame.size.height - edgeInsets.top + edgeInsets.bottom);
 }
 
 - (void)setTabBarItemTitleTextAttributes:(NSDictionary<NSAttributedStringKey, id> *)titleTextAttributes forState:(UIControlState)state {

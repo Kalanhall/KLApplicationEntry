@@ -10,6 +10,7 @@
 #import "KLViewController.h"
 #import "KLTabBarController.h"
 @import KLApplicationEntry;
+@import Lottie;
 
 @implementation KLAppDelegate
 
@@ -54,10 +55,6 @@
     // 设置文字位置偏移量
     [vc setTabBarItemTitlePositionAdjustment:(UIOffset){0, -2} forState:UIControlStateNormal];
     [vc setTabBarItemTitlePositionAdjustment:(UIOffset){0, -2} forState:UIControlStateSelected];
-    // 设置凸起图片高度
-    [vc setTabBarItemImageEdgeInsets:(UIEdgeInsets){-17,0,17,0} atIndex:2];
-    // 增加一个凸起点击区域
-    [vc setTabBarRespondAreaAtIndex:2 height:0];
     
     
     __weak typeof(self) weakself = self;

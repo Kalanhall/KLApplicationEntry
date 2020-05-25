@@ -24,6 +24,11 @@
 		7F50D67E402907F266A4E6D8 /* Pods_KLApplicationEntry_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82231BBD0D31C67B657C89F8 /* Pods_KLApplicationEntry_Tests.framework */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		BAA10AA60C3E0789A8B1E0B3 /* Pods_KLApplicationEntry_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97F070865CF76AA6AB76922F /* Pods_KLApplicationEntry_Example.framework */; };
+		F60F3A62247BC179006CF4E3 /* 3.json in Resources */ = {isa = PBXBuildFile; fileRef = F60F3A5D247BC177006CF4E3 /* 3.json */; };
+		F60F3A63247BC179006CF4E3 /* 2.json in Resources */ = {isa = PBXBuildFile; fileRef = F60F3A5E247BC178006CF4E3 /* 2.json */; };
+		F60F3A64247BC179006CF4E3 /* 5.json in Resources */ = {isa = PBXBuildFile; fileRef = F60F3A5F247BC178006CF4E3 /* 5.json */; };
+		F60F3A65247BC179006CF4E3 /* 1.json in Resources */ = {isa = PBXBuildFile; fileRef = F60F3A60247BC179006CF4E3 /* 1.json */; };
+		F60F3A66247BC179006CF4E3 /* 4.json in Resources */ = {isa = PBXBuildFile; fileRef = F60F3A61247BC179006CF4E3 /* 4.json */; };
 		F6443A15247372B1004AD092 /* KLTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6443A14247372B1004AD092 /* KLTabBarController.m */; };
 /* End PBXBuildFile section */
 
@@ -68,6 +73,11 @@
 		97F070865CF76AA6AB76922F /* Pods_KLApplicationEntry_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KLApplicationEntry_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3F7B6D590C08FBAE6AA5312 /* Pods-KLApplicationEntry_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KLApplicationEntry_Tests.release.xcconfig"; path = "Target Support Files/Pods-KLApplicationEntry_Tests/Pods-KLApplicationEntry_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		F128135AE1431327B257C985 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		F60F3A5D247BC177006CF4E3 /* 3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 3.json; sourceTree = "<group>"; };
+		F60F3A5E247BC178006CF4E3 /* 2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 2.json; sourceTree = "<group>"; };
+		F60F3A5F247BC178006CF4E3 /* 5.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 5.json; sourceTree = "<group>"; };
+		F60F3A60247BC179006CF4E3 /* 1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 1.json; sourceTree = "<group>"; };
+		F60F3A61247BC179006CF4E3 /* 4.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 4.json; sourceTree = "<group>"; };
 		F6443A13247372B1004AD092 /* KLTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KLTabBarController.h; sourceTree = "<group>"; };
 		F6443A14247372B1004AD092 /* KLTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KLTabBarController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -142,6 +152,11 @@
 				6003F5A6195388D20070C39A /* KLViewController.m */,
 				F6443A13247372B1004AD092 /* KLTabBarController.h */,
 				F6443A14247372B1004AD092 /* KLTabBarController.m */,
+				F60F3A5E247BC178006CF4E3 /* 2.json */,
+				F60F3A60247BC179006CF4E3 /* 1.json */,
+				F60F3A5D247BC177006CF4E3 /* 3.json */,
+				F60F3A5F247BC178006CF4E3 /* 5.json */,
+				F60F3A61247BC179006CF4E3 /* 4.json */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
@@ -286,6 +301,11 @@
 			files = (
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
+				F60F3A62247BC179006CF4E3 /* 3.json in Resources */,
+				F60F3A64247BC179006CF4E3 /* 5.json in Resources */,
+				F60F3A65247BC179006CF4E3 /* 1.json in Resources */,
+				F60F3A66247BC179006CF4E3 /* 4.json in Resources */,
+				F60F3A63247BC179006CF4E3 /* 2.json in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
@@ -354,10 +374,12 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-KLApplicationEntry_Example/Pods-KLApplicationEntry_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/KLApplicationEntry/KLApplicationEntry.framework",
+				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KLApplicationEntry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
