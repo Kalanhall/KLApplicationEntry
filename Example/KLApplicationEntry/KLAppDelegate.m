@@ -14,26 +14,25 @@
 
 @implementation KLAppDelegate
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{
-    // Override point for customization after application launch.
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    NSArray *controllers = @[
+        [UINavigationController navigationWithRootViewController:KLViewController.new
+                                                       title:@"" image:@"tab0-n-JSON动效不设置" selectedImage:@"tab0-s-JSON动效不设置"],
+        [UINavigationController navigationWithRootViewController:KLViewController.new
+                                                       title:@"" image:@"tab1-n-JSON动效不设置" selectedImage:@"tab1-s-JSON动效不设置"],
+        [UINavigationController navigationWithRootViewController:KLViewController.new
+                                                       title:@"" image:@"tab2-n-JSON动效不设置" selectedImage:@"tab2-n-JSON动效不设置"],
+        [UINavigationController navigationWithRootViewController:KLViewController.new
+                                                       title:@"" image:@"tab3-n-JSON动效不设置" selectedImage:@"tab3-s-JSON动效不设置"],
+        [UINavigationController navigationWithRootViewController:KLViewController.new
+                                                       title:@"" image:@"tab4-n-JSON动效不设置" selectedImage:@"tab4-s-JSON动效不设置"]
+    ];
     
     self.window = [UIWindow.alloc initWithFrame:UIScreen.mainScreen.bounds];
-    
-    NSArray *controllers =
-    @[
-    [UINavigationController navigationWithRootViewController:KLViewController.new
-                                                       title:@"闲鱼" image:@"tab0-n" selectedImage:@"tab0-s"],
-    [UINavigationController navigationWithRootViewController:KLViewController.new
-                                                       title:@"鱼塘" image:@"tab1-n" selectedImage:@"tab1-s"],
-    [UINavigationController navigationWithRootViewController:KLViewController.new
-                                                       title:@"发布" image:@"tab2-n" selectedImage:@"tab2-n"],
-    [UINavigationController navigationWithRootViewController:KLViewController.new
-                                                       title:@"消息" image:@"tab3-n" selectedImage:@"tab3-s"],
-    [UINavigationController navigationWithRootViewController:KLViewController.new
-                                                       title:@"我的" image:@"tab4-n" selectedImage:@"tab4-s"]
-    ];
     KLTabBarController *vc = [KLTabBarController tabBarWithControllers:controllers];
+    self.window.rootViewController = vc;
+    [self.window makeKeyAndVisible];
     
     // MARK: - 导航栏全局设置
     [UINavigationController setAppearanceTincolor:UIColor.blackColor];
@@ -43,6 +42,8 @@
     // MARK: - 选项卡全局设置
     // 设置阴影线颜色，当只有设置了背景图后才生效
     [vc setTabBarShadowLineColor:UIColor.clearColor];
+    // 选项卡阴影
+    [vc setTabBarShadowColor:UIColor.blackColor opacity:0.1];
     // 设置背景图片
     [vc setTabBarBackgroundImageWithColor:UIColor.whiteColor];
     // 设置文字样式
@@ -56,47 +57,20 @@
     [vc setTabBarItemTitlePositionAdjustment:(UIOffset){0, -2} forState:UIControlStateNormal];
     [vc setTabBarItemTitlePositionAdjustment:(UIOffset){0, -2} forState:UIControlStateSelected];
     
+    // 设置中间按钮/JSON动效按钮
+    [vc setupCustomAreaView];
     
-    __weak typeof(self) weakself = self;
     vc.swipeTabBarCallBack = ^(UISwipeGestureRecognizer * _Nonnull swipe) {
         if (swipe.direction == UISwipeGestureRecognizerDirectionRight) {
             // 右侧划
+            NSLog(@"向右侧滑");
         } else {
             // 左侧划
+            NSLog(@"向左侧滑");
         }
     };
     
-    self.window.rootViewController = vc;
-    [self.window makeKeyAndVisible];
-    
     return YES;
-}
-
-- (void)applicationWillResignActive:(UIApplication *)application
-{
-    // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-    // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
-}
-
-- (void)applicationDidEnterBackground:(UIApplication *)application
-{
-    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
-    // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
-}
-
-- (void)applicationWillEnterForeground:(UIApplication *)application
-{
-    // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
-}
-
-- (void)applicationDidBecomeActive:(UIApplication *)application
-{
-    // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
-}
-
-- (void)applicationWillTerminate:(UIApplication *)application
-{
-    // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
 @end

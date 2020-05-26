@@ -24,11 +24,18 @@
 		7F50D67E402907F266A4E6D8 /* Pods_KLApplicationEntry_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82231BBD0D31C67B657C89F8 /* Pods_KLApplicationEntry_Tests.framework */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		BAA10AA60C3E0789A8B1E0B3 /* Pods_KLApplicationEntry_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97F070865CF76AA6AB76922F /* Pods_KLApplicationEntry_Example.framework */; };
-		F60F3A62247BC179006CF4E3 /* 3.json in Resources */ = {isa = PBXBuildFile; fileRef = F60F3A5D247BC177006CF4E3 /* 3.json */; };
-		F60F3A63247BC179006CF4E3 /* 2.json in Resources */ = {isa = PBXBuildFile; fileRef = F60F3A5E247BC178006CF4E3 /* 2.json */; };
-		F60F3A64247BC179006CF4E3 /* 5.json in Resources */ = {isa = PBXBuildFile; fileRef = F60F3A5F247BC178006CF4E3 /* 5.json */; };
-		F60F3A65247BC179006CF4E3 /* 1.json in Resources */ = {isa = PBXBuildFile; fileRef = F60F3A60247BC179006CF4E3 /* 1.json */; };
-		F60F3A66247BC179006CF4E3 /* 4.json in Resources */ = {isa = PBXBuildFile; fileRef = F60F3A61247BC179006CF4E3 /* 4.json */; };
+		F60F3A71247CEF3B006CF4E3 /* discover_dark.json in Resources */ = {isa = PBXBuildFile; fileRef = F60F3A67247CEE76006CF4E3 /* discover_dark.json */; };
+		F60F3A73247CEF3B006CF4E3 /* cart_dark.json in Resources */ = {isa = PBXBuildFile; fileRef = F60F3A69247CEE77006CF4E3 /* cart_dark.json */; };
+		F60F3A74247CEF3B006CF4E3 /* user_dark.json in Resources */ = {isa = PBXBuildFile; fileRef = F60F3A6A247CEE78006CF4E3 /* user_dark.json */; };
+		F60F3A78247CEF3B006CF4E3 /* home_dark.json in Resources */ = {isa = PBXBuildFile; fileRef = F60F3A6E247CEF3A006CF4E3 /* home_dark.json */; };
+		F60F3A7A247CEF3B006CF4E3 /* category_dark.json in Resources */ = {isa = PBXBuildFile; fileRef = F60F3A70247CEF3B006CF4E3 /* category_dark.json */; };
+		F60F3A80247CF6ED006CF4E3 /* cart.json in Resources */ = {isa = PBXBuildFile; fileRef = F60F3A7B247CF6EA006CF4E3 /* cart.json */; };
+		F60F3A81247CF6ED006CF4E3 /* discover.json in Resources */ = {isa = PBXBuildFile; fileRef = F60F3A7C247CF6EB006CF4E3 /* discover.json */; };
+		F60F3A82247CF6ED006CF4E3 /* category.json in Resources */ = {isa = PBXBuildFile; fileRef = F60F3A7D247CF6EC006CF4E3 /* category.json */; };
+		F60F3A83247CF6ED006CF4E3 /* user.json in Resources */ = {isa = PBXBuildFile; fileRef = F60F3A7E247CF6EC006CF4E3 /* user.json */; };
+		F60F3A84247CF6ED006CF4E3 /* home.json in Resources */ = {isa = PBXBuildFile; fileRef = F60F3A7F247CF6ED006CF4E3 /* home.json */; };
+		F60F3A87247CFBE3006CF4E3 /* KLCenterTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = F60F3A86247CFBE3006CF4E3 /* KLCenterTabBarController.m */; };
+		F60F3A8A247D13C8006CF4E3 /* KLCenterController.m in Sources */ = {isa = PBXBuildFile; fileRef = F60F3A89247D13C8006CF4E3 /* KLCenterController.m */; };
 		F6443A15247372B1004AD092 /* KLTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6443A14247372B1004AD092 /* KLTabBarController.m */; };
 /* End PBXBuildFile section */
 
@@ -73,11 +80,20 @@
 		97F070865CF76AA6AB76922F /* Pods_KLApplicationEntry_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KLApplicationEntry_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3F7B6D590C08FBAE6AA5312 /* Pods-KLApplicationEntry_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KLApplicationEntry_Tests.release.xcconfig"; path = "Target Support Files/Pods-KLApplicationEntry_Tests/Pods-KLApplicationEntry_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		F128135AE1431327B257C985 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		F60F3A5D247BC177006CF4E3 /* 3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 3.json; sourceTree = "<group>"; };
-		F60F3A5E247BC178006CF4E3 /* 2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 2.json; sourceTree = "<group>"; };
-		F60F3A5F247BC178006CF4E3 /* 5.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 5.json; sourceTree = "<group>"; };
-		F60F3A60247BC179006CF4E3 /* 1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 1.json; sourceTree = "<group>"; };
-		F60F3A61247BC179006CF4E3 /* 4.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 4.json; sourceTree = "<group>"; };
+		F60F3A67247CEE76006CF4E3 /* discover_dark.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = discover_dark.json; sourceTree = "<group>"; };
+		F60F3A69247CEE77006CF4E3 /* cart_dark.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cart_dark.json; sourceTree = "<group>"; };
+		F60F3A6A247CEE78006CF4E3 /* user_dark.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = user_dark.json; sourceTree = "<group>"; };
+		F60F3A6E247CEF3A006CF4E3 /* home_dark.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = home_dark.json; sourceTree = "<group>"; };
+		F60F3A70247CEF3B006CF4E3 /* category_dark.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = category_dark.json; sourceTree = "<group>"; };
+		F60F3A7B247CF6EA006CF4E3 /* cart.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cart.json; sourceTree = "<group>"; };
+		F60F3A7C247CF6EB006CF4E3 /* discover.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = discover.json; sourceTree = "<group>"; };
+		F60F3A7D247CF6EC006CF4E3 /* category.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = category.json; sourceTree = "<group>"; };
+		F60F3A7E247CF6EC006CF4E3 /* user.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = user.json; sourceTree = "<group>"; };
+		F60F3A7F247CF6ED006CF4E3 /* home.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = home.json; sourceTree = "<group>"; };
+		F60F3A85247CFBE3006CF4E3 /* KLCenterTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KLCenterTabBarController.h; sourceTree = "<group>"; };
+		F60F3A86247CFBE3006CF4E3 /* KLCenterTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KLCenterTabBarController.m; sourceTree = "<group>"; };
+		F60F3A88247D13C8006CF4E3 /* KLCenterController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KLCenterController.h; sourceTree = "<group>"; };
+		F60F3A89247D13C8006CF4E3 /* KLCenterController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KLCenterController.m; sourceTree = "<group>"; };
 		F6443A13247372B1004AD092 /* KLTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KLTabBarController.h; sourceTree = "<group>"; };
 		F6443A14247372B1004AD092 /* KLTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KLTabBarController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -145,21 +161,30 @@
 		6003F593195388D20070C39A /* Example for KLApplicationEntry */ = {
 			isa = PBXGroup;
 			children = (
+				F60F3A7B247CF6EA006CF4E3 /* cart.json */,
+				F60F3A7D247CF6EC006CF4E3 /* category.json */,
+				F60F3A7C247CF6EB006CF4E3 /* discover.json */,
+				F60F3A7F247CF6ED006CF4E3 /* home.json */,
+				F60F3A7E247CF6EC006CF4E3 /* user.json */,
+				F60F3A69247CEE77006CF4E3 /* cart_dark.json */,
+				F60F3A70247CEF3B006CF4E3 /* category_dark.json */,
+				F60F3A67247CEE76006CF4E3 /* discover_dark.json */,
+				F60F3A6E247CEF3A006CF4E3 /* home_dark.json */,
+				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F59C195388D20070C39A /* KLAppDelegate.h */,
 				6003F59D195388D20070C39A /* KLAppDelegate.m */,
-				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* KLViewController.h */,
 				6003F5A6195388D20070C39A /* KLViewController.m */,
 				F6443A13247372B1004AD092 /* KLTabBarController.h */,
 				F6443A14247372B1004AD092 /* KLTabBarController.m */,
-				F60F3A5E247BC178006CF4E3 /* 2.json */,
-				F60F3A60247BC179006CF4E3 /* 1.json */,
-				F60F3A5D247BC177006CF4E3 /* 3.json */,
-				F60F3A5F247BC178006CF4E3 /* 5.json */,
-				F60F3A61247BC179006CF4E3 /* 4.json */,
+				F60F3A88247D13C8006CF4E3 /* KLCenterController.h */,
+				F60F3A89247D13C8006CF4E3 /* KLCenterController.m */,
+				F60F3A85247CFBE3006CF4E3 /* KLCenterTabBarController.h */,
+				F60F3A86247CFBE3006CF4E3 /* KLCenterTabBarController.m */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
-				6003F5A8195388D20070C39A /* Images.xcassets */,
+				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F594195388D20070C39A /* Supporting Files */,
+				F60F3A6A247CEE78006CF4E3 /* user_dark.json */,
 			);
 			name = "Example for KLApplicationEntry";
 			path = KLApplicationEntry;
@@ -299,14 +324,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F60F3A73247CEF3B006CF4E3 /* cart_dark.json in Resources */,
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
-				F60F3A62247BC179006CF4E3 /* 3.json in Resources */,
-				F60F3A64247BC179006CF4E3 /* 5.json in Resources */,
-				F60F3A65247BC179006CF4E3 /* 1.json in Resources */,
-				F60F3A66247BC179006CF4E3 /* 4.json in Resources */,
-				F60F3A63247BC179006CF4E3 /* 2.json in Resources */,
+				F60F3A82247CF6ED006CF4E3 /* category.json in Resources */,
+				F60F3A71247CEF3B006CF4E3 /* discover_dark.json in Resources */,
+				F60F3A78247CEF3B006CF4E3 /* home_dark.json in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
+				F60F3A7A247CEF3B006CF4E3 /* category_dark.json in Resources */,
+				F60F3A80247CF6ED006CF4E3 /* cart.json in Resources */,
+				F60F3A81247CF6ED006CF4E3 /* discover.json in Resources */,
+				F60F3A74247CEF3B006CF4E3 /* user_dark.json in Resources */,
+				F60F3A83247CF6ED006CF4E3 /* user.json in Resources */,
+				F60F3A84247CF6ED006CF4E3 /* home.json in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -394,7 +424,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F59E195388D20070C39A /* KLAppDelegate.m in Sources */,
+				F60F3A8A247D13C8006CF4E3 /* KLCenterController.m in Sources */,
 				6003F5A7195388D20070C39A /* KLViewController.m in Sources */,
+				F60F3A87247CFBE3006CF4E3 /* KLCenterTabBarController.m in Sources */,
 				F6443A15247372B1004AD092 /* KLTabBarController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);

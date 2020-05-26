@@ -43,6 +43,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)addTabBarCustomAreaWithView:(UIView *)view atIndex:(NSInteger)index height:(CGFloat)height;
 
 /// 为每个TabBarItem自定义视图
+/// 注意：请在UITabBarController完成viewControllers初始化后调用
 - (void)addTabBarCustomAreaForeachWithViews:(NSArray <UIView *>*)views height:(CGFloat)height;
 
 /// 设置选项卡指定自定义子控制器标题位移

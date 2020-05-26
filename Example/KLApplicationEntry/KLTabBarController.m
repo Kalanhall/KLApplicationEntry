@@ -22,67 +22,40 @@
     [super viewDidLoad];
     
     self.delegate = self;
-    
-    __weak typeof(self) weakself = self;
-    self.shouldSelectViewController = ^(NSInteger index) {
-        // MARK: Center 模式
-        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"消息" message:@"点击中间按钮" preferredStyle:UIAlertControllerStyleAlert];
-        UIAlertAction *sure = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDestructive handler:nil];
-        [alert addAction:sure];
-        [weakself presentViewController:alert animated:YES completion:nil];
+}
+
+- (void)setupCustomAreaView {
         
-        // MARK: Lottie 模式
-//        [weakself.items enumerateObjectsUsingBlock:^(LOTAnimationView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-//            if (index == idx) {
-//                [obj play];
-//            } else {
-//                [obj stop];
-//            }
-//        }];
-    };
-}
-
-- (void)viewDidLayoutSubviews {
-    [super viewDidLayoutSubviews];
-    
     // JSON动画样式
-//    self.items = @[[LOTAnimationView animationNamed:@"1"],
-//                   [LOTAnimationView animationNamed:@"2"],
-//                   [LOTAnimationView animationNamed:@"3"],
-//                   [LOTAnimationView animationNamed:@"4"],
-//                   [LOTAnimationView animationNamed:@"5"]];
-//    
-//    [self addTabBarCustomAreaForeachWithViews:self.items height:33];
-//    
-//    [self.items enumerateObjectsUsingBlock:^(LOTAnimationView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-//        
-//        [self resetTabBarCustomArea:obj extendEdgeInsets:(UIEdgeInsets){idx == 2 ? -20 : 2, 0, 0, 0}];
-//        
-//        obj.tag = idx;
-//        obj.animationSpeed = 0.7;
-//        obj.userInteractionEnabled = YES;
-//        UITapGestureRecognizer *tap = [UITapGestureRecognizer.alloc initWithTarget:self action:@selector(lotanimationTapCallBack:)];
-//        [obj addGestureRecognizer:tap];
-//    }];
-//    
-//    
-//    [self.items.firstObject play];
-    
-    // 系统Item凸起样式
-    // Step1 设置图片位置
-    [self setTabBarItemImageEdgeInsets:(UIEdgeInsets){-17,0,17,0} atIndex:2];
-    // Step2 添加响应区域
-    UIButton *center = [UIButton buttonWithType:UIButtonTypeCustom];
-    center.tag = 2;
-    [center addTarget:self action:@selector(centerTouchInsideCallBack:) forControlEvents:UIControlEventTouchUpInside];
-    [self addTabBarCustomAreaWithView:center atIndex:2 height:0];
-    [self resetTabBarCustomArea:center extendEdgeInsets:(UIEdgeInsets){-20, 0, 0, 0}];
-}
+    self.items = @[[LOTAnimationView animationNamed:@"home"],
+                   [LOTAnimationView animationNamed:@"category"],
+                   [LOTAnimationView animationNamed:@"discover"],
+                   [LOTAnimationView animationNamed:@"cart"],
+                   [LOTAnimationView animationNamed:@"user"]];
 
-- (void)centerTouchInsideCallBack:(UIButton *)sender {
-    if (self.shouldSelectViewController) {
-        self.shouldSelectViewController(sender.tag);
-    }
+    // 图片高度
+    [self addTabBarCustomAreaForeachWithViews:self.items height:0];
+
+    [self.items enumerateObjectsUsingBlock:^(LOTAnimationView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        
+        // 图片调整（单独设置突出按钮）
+//        [self resetTabBarCustomArea:obj extendEdgeInsets:(UIEdgeInsets){idx == 2 ? -20 : 2, 0, 0, 0}];
+
+        obj.tag = idx;
+        obj.animationSpeed = 1;
+        
+        /*
+         *****************************************
+         这个很重要，设置后响应链才可以还给TabBarItem处理
+         否则TabBarItem无法切换，参考
+         UITabBar+Init.m 30行代码
+         *****************************************
+        */
+        obj.userInteractionEnabled = NO;
+    }];
+    
+    // 默认首页
+    [self.items.firstObject play];
 }
 
 - (void)lotanimationTapCallBack:(UITapGestureRecognizer *)tap {
@@ -94,21 +67,15 @@
 - (BOOL)tabBarController:(UITabBarController *)tabBarController shouldSelectViewController:(UIViewController *)viewController {
     
     NSInteger index = [tabBarController.viewControllers indexOfObject:viewController];
-    
-    // MARK: - 中间突出按钮回调
-    if (index == 2) {
-        if (self.shouldSelectViewController) {
-            self.shouldSelectViewController(index);
+    [self.items enumerateObjectsUsingBlock:^(LOTAnimationView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        if (index == idx) {
+            [obj play];
+        } else {
+            [obj stop];
         }
-    }
-
-    return index != 2;
-    // MARK: - Json动画
-//    if (self.shouldSelectViewController) {
-//        self.shouldSelectViewController(index);
-//    }
-//    
-//    return YES;
+    }];
+    
+    return YES;
 }
 
 @end

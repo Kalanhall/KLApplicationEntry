@@ -54,6 +54,7 @@ const NSString *SELECT_CALLBACK_KEY = @"SELECT_CALLBACK_KEY";
 
 - (void)addTabBarCustomAreaForeachWithViews:(NSArray <UIView *>*)views height:(CGFloat)height {
     [views enumerateObjectsUsingBlock:^(UIView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        NSAssert(self.tabBar.items.count > 0, @"UITabBarController Items equal 0.");
         CGFloat w = self.tabBar.bounds.size.width/self.tabBar.items.count;
         CGFloat h = height;
         if (h <= 0) {

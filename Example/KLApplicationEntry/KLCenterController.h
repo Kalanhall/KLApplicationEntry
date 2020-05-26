@@ -1,8 +1,8 @@
 //
-//  KLTabBarController.h
+//  KLCenterController.h
 //  KLApplicationEntry_Example
 //
-//  Created by Logic on 2020/5/19.
+//  Created by Logic on 2020/5/26.
 //  Copyright © 2020 Kalanhall@163.com. All rights reserved.
 //
 
@@ -10,9 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface KLTabBarController : UITabBarController
-
-- (void)setupCustomAreaView;
+@interface KLCenterController : UIViewController
 
 @end
 

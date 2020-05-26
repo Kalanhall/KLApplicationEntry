@@ -31,7 +31,8 @@
     for (UIView *subView in self.subviews) {
         CGPoint targetPoint = [self convertPoint:point toView:subView];
         UIView *view = [subView hitTest:targetPoint withEvent:event];
-        if (view) {
+        // 自定义可交互区域，返回自身，其他则按系统响应链执行
+        if (view  && view.isUserInteractionEnabled && ![view isKindOfClass:NSClassFromString(@"UITabBarButton")]) {
             return view;
         }
     }
